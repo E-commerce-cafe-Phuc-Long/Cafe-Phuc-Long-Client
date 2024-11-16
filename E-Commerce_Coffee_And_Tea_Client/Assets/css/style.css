@@ -1,0 +1,68 @@
+/* Base */
+body {
+	position: relative;
+}
+/* Sub menu */
+ul.main-menu li:hover ul.sub-menu {
+    display: flex;
+}
+ul.main-menu li.active a {
+    color: #080;
+}
+ul.sub-menu {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    padding: 12px;
+    min-width: 320px;
+}
+ul.single-list a {
+    display: block;
+    padding: 4px 8px;
+    text-transform: none;
+}
+ul.single-list li:hover a{
+    color: #fff;
+    background-color: #080;
+}
+
+/* Banner */
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.swiper-pagination-bullet {
+	padding: 4px;
+	border: 3px solid #eee;
+	background-color: #fff;
+	opacity: 0.8;
+}
+.swiper-pagination-bullet-active {
+	padding: 4px;
+	border: 3px solid #eee;
+	background-color: #000;
+}
+/* Detail */
+.option-tab-active,
+.pagination-active,
+.ice-active,
+.sweet-active,
+.size-active {
+	background-color: #166534;
+	color: #fff;
+}
