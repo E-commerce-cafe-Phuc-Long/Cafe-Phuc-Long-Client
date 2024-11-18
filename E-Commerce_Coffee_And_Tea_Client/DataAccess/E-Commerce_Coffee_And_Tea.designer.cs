@@ -20,16 +20,19 @@ namespace E_Commerce_Coffee_And_Tea_Client.DataAccess
 	using System.Linq.Expressions;
 	using System.ComponentModel;
 	using System;
-	
-	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="E-Commerce_Coffee_And_Tea")]
+    using System.Configuration;
+
+    [global::System.Data.Linq.Mapping.DatabaseAttribute(Name="E-Commerce_Coffee_And_Tea")]
 	public partial class E_Commerce_Coffee_And_TeaDataContext : System.Data.Linq.DataContext
 	{
-		
-		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
-		
-    #region Extensibility Method Definitions
-    partial void OnCreated();
+        
+        private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
+        public E_Commerce_Coffee_And_TeaDataContext()
+       : base(ConfigurationManager.ConnectionStrings["E_Commerce_Coffee_And_TeaConnectionString"].ConnectionString)
+        {
+        }
+        #region Extensibility Method Definitions
+        partial void OnCreated();
     partial void InsertChiTietDonHang(ChiTietDonHang instance);
     partial void UpdateChiTietDonHang(ChiTietDonHang instance);
     partial void DeleteChiTietDonHang(ChiTietDonHang instance);

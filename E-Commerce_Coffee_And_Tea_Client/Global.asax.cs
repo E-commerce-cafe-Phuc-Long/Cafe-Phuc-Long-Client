@@ -1,9 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Unity;
 
 namespace E_Commerce_Coffee_And_Tea_Client
 {
@@ -13,6 +14,7 @@ namespace E_Commerce_Coffee_And_Tea_Client
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            UnityConfig.RegisterComponents();
         }
     }
 }

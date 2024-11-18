@@ -70,3 +70,10 @@ D:\HUIT\HK7\PhatTrienUngDungThongMinh\FinalProject\E-Commerce_Coffee_And_Tea_Cli
 D:\HUIT\HK7\PhatTrienUngDungThongMinh\FinalProject\E-Commerce_Coffee_And_Tea_Client\E-Commerce_Coffee_And_Tea_Client\obj\Debug\E-Commer.BDD37BFF.Up2Date
 D:\HUIT\HK7\PhatTrienUngDungThongMinh\FinalProject\E-Commerce_Coffee_And_Tea_Client\E-Commerce_Coffee_And_Tea_Client\obj\Debug\E-Commerce_Coffee_And_Tea_Client.dll
 D:\HUIT\HK7\PhatTrienUngDungThongMinh\FinalProject\E-Commerce_Coffee_And_Tea_Client\E-Commerce_Coffee_And_Tea_Client\obj\Debug\E-Commerce_Coffee_And_Tea_Client.pdb
+D:\HUIT\HK7\PhatTrienUngDungThongMinh\FinalProject\E-Commerce_Coffee_And_Tea_Client\E-Commerce_Coffee_And_Tea_Client\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\HUIT\HK7\PhatTrienUngDungThongMinh\FinalProject\E-Commerce_Coffee_And_Tea_Client\E-Commerce_Coffee_And_Tea_Client\bin\Unity.Abstractions.dll
+D:\HUIT\HK7\PhatTrienUngDungThongMinh\FinalProject\E-Commerce_Coffee_And_Tea_Client\E-Commerce_Coffee_And_Tea_Client\bin\Unity.Container.dll
+D:\HUIT\HK7\PhatTrienUngDungThongMinh\FinalProject\E-Commerce_Coffee_And_Tea_Client\E-Commerce_Coffee_And_Tea_Client\bin\Unity.Mvc5.dll
+D:\HUIT\HK7\PhatTrienUngDungThongMinh\FinalProject\E-Commerce_Coffee_And_Tea_Client\E-Commerce_Coffee_And_Tea_Client\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\HUIT\HK7\PhatTrienUngDungThongMinh\FinalProject\E-Commerce_Coffee_And_Tea_Client\E-Commerce_Coffee_And_Tea_Client\bin\Unity.Abstractions.pdb
+D:\HUIT\HK7\PhatTrienUngDungThongMinh\FinalProject\E-Commerce_Coffee_And_Tea_Client\E-Commerce_Coffee_And_Tea_Client\bin\Unity.Container.pdb
