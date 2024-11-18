@@ -6,6 +6,9 @@ using Unity;
 using Unity.Mvc5;
 using Unity.Lifetime;
 using Unity.Injection;
+using E_Commerce_Coffee_And_Tea_Client.Services.Size;
+using E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories.Dosage;
+using E_Commerce_Coffee_And_Tea_Client.Services.Dosage;
 
 namespace E_Commerce_Coffee_And_Tea_Client
 {
@@ -35,8 +38,17 @@ namespace E_Commerce_Coffee_And_Tea_Client
 
             #region Đăng ký các repositories và services
 
+            //Product
             container.RegisterType<IProductRepository, ProductRepository>();
             container.RegisterType<IProductService, ProductService>();
+
+            //Size
+            container.RegisterType<ISizeRepository, SizeRepository>();
+            container.RegisterType<ISizeService, SizeService>();
+
+            //Dosage
+            container.RegisterType<IDosageRepository, DosageRepository>();
+            container.RegisterType<IDosageService, DosageService>();
 
             #endregion
 

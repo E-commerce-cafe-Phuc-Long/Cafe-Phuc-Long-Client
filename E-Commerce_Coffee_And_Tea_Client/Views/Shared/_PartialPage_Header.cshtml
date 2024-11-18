@@ -2,12 +2,13 @@
     <div class="max-w-[1280px] m-auto">
         <div class="flex justify-between items-center">
             <div class="flex items-center">
-                <img src="../assets/img/logo.png" alt="logo" class="w-[50px]" />
+                <img src="~/Assets/img/logo.png" alt="logo.png" class="w-[50px]" />
                 <div class="flex items-center mx-3 py-1 pe-3 border-2 rounded-2xl w-80 bg-[#eaeff2]">
                     <i class="bx bx-search mx-3"></i>
-                    <form action="#" method="get" class="w-full">
+                    <p></p>
+                    <form action="@Url.RouteUrl("SearchProduct")" method="get" class="w-full">
                         <input type="text"
-                               name=""
+                               name="productName"
                                id=""
                                class="outline-none w-full bg-[#eaeff2]"
                                placeholder="Bạn muốn mua gì..." />
@@ -20,7 +21,7 @@
                         <a href="#"><i class="bx bx-bell"></i></a>
                     </li>
                     <li class="mx-3 text-3xl">
-                        <a href="./profile.html"><i class="bx bx-user-circle"></i></a>
+                        <a href="@Url.RouteUrl("Profile")"><i class="bx bx-user-circle"></i></a>
                     </li>
                 </ul>
             </div>

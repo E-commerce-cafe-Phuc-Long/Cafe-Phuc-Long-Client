@@ -1,0 +1,74 @@
+﻿@model List<E_Commerce_Coffee_And_Tea_Client.DataAccess.ChiTietSanPham>
+@{
+    ViewBag.Title = "Tìm kiếm sản phẩm";
+    Layout = "~/Views/Shared/_LayoutPage_Main.cshtml";
+}
+
+
+<div class="w-[1280px] m-auto">
+    <ul class="flex py-2">
+        <li><a href="@Url.RouteUrl("Home")" class="block mx-2 hover:text-green-800">Trang chủ</a></li>
+        <li>/</li>
+        <li><a href="@Url.RouteUrl("Product")" class="block mx-2 hover:text-green-800">Sản phẩm</a></li>
+    </ul>
+</div>
+<div class="w-[1280px] m-auto my-3">
+    <div class="flex gap-2">
+        <div class="w-1/5">
+            @{
+                Html.RenderPartial("_PartialPage_LeftSideBar");
+            }
+        </div>
+        <div class="w-4/5">
+            <h2 class="text-sm font-bold uppercase text-green-800 mb-5">Sản phẩm nổi bật</h2>
+            <div class="flex items-center flex-wrap gap-2">
+                @foreach (var prod in Model)
+                {
+                    <div class="rounded-xl hover:shadow-full-line w-gap-2 border">
+                        <div class="p-5 bg-gray-100">
+                            <img src="~/Assets/img/@prod.SanPham.hinhAnh" alt="@prod.SanPham.hinhAnh" class="m-auto h-[135px]">
+                        </div>
+                        <div class="px-5 py-3">
+                            <h3>
+                                <a href="@Url.RouteUrl("ProductDetail", new { productId = prod.SanPham.maSP, sizeId = prod.Size.maSize })
+"
+                                   title="@prod.SanPham.tenSP (@prod.Size.tenSize)">
+                                    @if (prod.SanPham.tenSP.Length <= 16)
+                                    {
+                                        @prod.SanPham.tenSP @(" (") @(prod.Size.tenSize) @(")");
+                                    }
+                                    else
+                                    {
+                                        @prod.SanPham.tenSP.Substring(0, 16) @("...");
+                                    }
+                                </a>
+                            </h3>
+                            <p class="font-medium">@(string.Format("{0:N0} ₫", prod.donGia))</p>
+                        </div>
+                        <!-- <a href="#" class="block w-[158px] text-center m-auto mb-3 border py-2 rounded-xl bg-green-800 text-white"><i class='bx bx-cart-add pe-2'></i>Đặt mua</a> -->
+                        <button class="block m-auto border px-10 py-2 mb-3 rounded-xl bg-green-800 text-white"><i class='bx bx-cart-add pe-2'></i>Đặt mua</button>
+                    </div>
+                }
+            </div>
+            <div class="flex justify-center items-center m-auto py-5 text-lg">
+                <div class="mx-1">
+                    <a href="#" class="pagination-active inline-block w-[50px] text-center text-lg border py-2 rounded-xl bg-gray-100 cursor-pointer">1</a>
+                </div>
+                <div class="mx-1">
+                    <a href="#" class="inline-block w-[50px] text-center text-lg border py-2 rounded-xl bg-gray-100 cursor-pointer">2</a>
+                </div>
+                <div class="mx-1">
+                    <a href="#" class="inline-block w-[50px] text-center text-lg border py-2 rounded-xl bg-gray-100 cursor-pointer">3</a>
+                </div>
+                <div class="mx-1">
+                    <a href="#" class="inline-block w-[50px] text-center text-lg border py-2 rounded-xl bg-gray-100 cursor-pointer">4</a>
+                </div>
+                <div class="mx-1">
+                    <a href="#" class="inline-block w-[50px] text-center text-lg border py-2 rounded-xl bg-gray-100 cursor-pointer">5</a>
+                </div>
+                <!-- <button class="block border border-green-800 text-green-800 hover:text-white hover:bg-green-700 px-10 py-2 m-3 rounded-lg font-medium">Xem thêm</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+@Html.Action("_PartialPage_Cart", "Cart")

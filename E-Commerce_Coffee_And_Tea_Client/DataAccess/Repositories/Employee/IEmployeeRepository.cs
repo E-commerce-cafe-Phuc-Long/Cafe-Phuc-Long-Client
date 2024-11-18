@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_Commerce_Coffee_And_Tea_Client.DataAccess
+namespace E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories
 {
     public interface IEmployeeRepository
     {

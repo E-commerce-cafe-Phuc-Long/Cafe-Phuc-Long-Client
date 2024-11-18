@@ -14,15 +14,35 @@ namespace E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories
         }
         public SanPham GetProductById(string productId)
         {
-            return _context.SanPhams.FirstOrDefault(prod => prod.maSP == productId);
+            return _context.SanPhams
+                .FirstOrDefault(prod => prod.maSP == productId);
         }
-        public List<SanPham> GetProductByName(string productName)
+        public List<ChiTietSanPham> GetProductByName(string productName)
         {
-            return _context.SanPhams.Where(prod => prod.tenSP.ToLower().Contains(productName.ToLower())).ToList();
+            return _context.ChiTietSanPhams
+                .Where(prod => prod.SanPham.tenSP.ToLower().Contains(productName.ToLower()))
+                .GroupBy(ctsp => ctsp.maSP)
+                //.Select(group => group.OrderByDescending(ctsp => ctsp.maCTSP).FirstOrDefault())
+                .Select(group => group.OrderBy(ctsp => ctsp.maCTSP).FirstOrDefault())
+                .ToList();
         }
         public List<SanPham> GetProductList()
         {
             return _context.SanPhams.ToList();
+        }
+        public List<ChiTietSanPham> GetLastProductDetailByIds(List<string> productIds)
+        {
+            return _context.ChiTietSanPhams
+                .Where(prod => productIds.Contains(prod.maSP))
+                .GroupBy(ctsp => ctsp.maSP)
+                //.Select(group => group.OrderByDescending(ctsp => ctsp.maCTSP).FirstOrDefault())
+                .Select(group => group.OrderBy(ctsp => ctsp.maCTSP).FirstOrDefault())
+                .ToList();  
+        }
+        public ChiTietSanPham GetProductDetailByIdAndSizeId(string productId, string sizeId)
+        {
+            return _context.ChiTietSanPhams
+                .FirstOrDefault(prod => prod.maSP == productId && prod.Size.maSize == sizeId);
         }
     }
 }

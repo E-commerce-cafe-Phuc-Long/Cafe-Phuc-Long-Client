@@ -1,4 +1,5 @@
 ﻿using E_Commerce_Coffee_And_Tea_Client.DataAccess;
+using E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,13 +18,21 @@ namespace E_Commerce_Coffee_And_Tea_Client.Services.Product
         {
             return _repository.GetProductById(productId);
         }
-        public List<SanPham> GetProductByName(string productName)
+        public List<ChiTietSanPham> GetProductByName(string productName)
         {
             return _repository.GetProductByName(productName);
         }
         public List<SanPham> GetProductList()
         {
             return _repository.GetProductList();
+        }
+        public List<ChiTietSanPham> GetLastProductDetailByIds(List<string> productIds)
+        {
+            return _repository.GetLastProductDetailByIds(productIds);
+        }
+        public ChiTietSanPham GetProductDetailByIdAndSizeId(string productId, string sizeId)
+        {
+            return _repository.GetProductDetailByIdAndSizeId(productId, sizeId);
         }
     }
 }

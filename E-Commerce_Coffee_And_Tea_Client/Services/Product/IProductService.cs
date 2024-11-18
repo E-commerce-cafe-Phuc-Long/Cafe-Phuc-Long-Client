@@ -10,7 +10,9 @@ namespace E_Commerce_Coffee_And_Tea_Client.Services.Product
     public interface IProductService
     {
         SanPham GetProductById(string productId);
-        List<SanPham> GetProductByName(string productName);
+        List<ChiTietSanPham> GetProductByName(string productName);
         List<SanPham> GetProductList();
+        List<ChiTietSanPham> GetLastProductDetailByIds(List<string> productIds);
+        ChiTietSanPham GetProductDetailByIdAndSizeId(string productId, string sizeId);
     }
 }
