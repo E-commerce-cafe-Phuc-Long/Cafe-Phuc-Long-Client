@@ -8,9 +8,10 @@ namespace E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories
 {
     public interface IEmployeeRepository
     {
-        NhanVien GetEmployeeByUsername(string username);
+        //NhanVien GetEmployeeByUsername(string username);
         void AddEmployee(NhanVien employee);
-        List<NhanVien> GetAllEmployees();
-        bool IsUsernameExists(string username);
+        //List<NhanVien> GetAllEmployees();
+        //bool IsUsernameExists(string username);
+        string GetLastEmployeeCode();
     }
 }

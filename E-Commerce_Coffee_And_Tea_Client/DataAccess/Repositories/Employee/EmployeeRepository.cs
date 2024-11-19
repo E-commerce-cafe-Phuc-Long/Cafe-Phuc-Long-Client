@@ -12,22 +12,29 @@ namespace E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories
         {
             this._context = context;
         }
-        public NhanVien GetEmployeeByUsername(string username)
-        {
-            return _context.NhanViens.FirstOrDefault(empl => empl.username == username);
-        }
+        //public NhanVien GetEmployeeByUsername(string username)
+        //{
+        //    return _context.NhanViens.FirstOrDefault(empl => empl.username == username);
+        //}
         public void AddEmployee(NhanVien employee)
         {
             _context.NhanViens.InsertOnSubmit(employee);
             _context.SubmitChanges();
         }
-        public List<NhanVien> GetAllEmployees()
+        public string GetLastEmployeeCode()
         {
-            return _context.NhanViens.ToList();
+            return _context.NhanViens
+                .OrderByDescending(nv => nv.maNV)
+                .Select(nv => nv.maNV)
+                .FirstOrDefault();
         }
-        public bool IsUsernameExists(string username)
-        {
-            return _context.NhanViens.Any(empl => empl.username == username);
-        }
+        //public List<NhanVien> GetAllEmployees()
+        //{
+        //    return _context.NhanViens.ToList();
+        //}
+        //public bool IsUsernameExists(string username)
+        //{
+        //    return _context.NhanViens.Any(empl => empl.username == username);
+        //}
     }
 }

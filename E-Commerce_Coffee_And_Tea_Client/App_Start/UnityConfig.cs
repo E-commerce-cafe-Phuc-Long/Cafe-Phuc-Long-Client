@@ -9,6 +9,7 @@ using Unity.Injection;
 using E_Commerce_Coffee_And_Tea_Client.Services.Size;
 using E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories.Dosage;
 using E_Commerce_Coffee_And_Tea_Client.Services.Dosage;
+using E_Commerce_Coffee_And_Tea_Client.Services.Employee;
 
 namespace E_Commerce_Coffee_And_Tea_Client
 {
@@ -49,6 +50,10 @@ namespace E_Commerce_Coffee_And_Tea_Client
             //Dosage
             container.RegisterType<IDosageRepository, DosageRepository>();
             container.RegisterType<IDosageService, DosageService>();
+
+            //Employee
+            container.RegisterType<IEmployeeRepository, EmployeeRepository>();
+            container.RegisterType<IEmployeeService, EmployeeService>();
 
             #endregion
 
