@@ -29,7 +29,11 @@ namespace E_Commerce_Coffee_And_Tea_Client
             app.UseCookieAuthentication(new CookieAuthenticationOptions()
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
-                LoginPath = new PathString("/auth/login")
+                LoginPath = new PathString("/auth/login"),
+                ExpireTimeSpan = TimeSpan.FromDays(14), // Thời hạn cookie 14 ngày
+                SlidingExpiration = true, // Gia hạn thời gian nếu người dùng hoạt động
+                CookieSecure = CookieSecureOption.Always, // Chỉ gửi cookie qua HTTPS
+                CookieHttpOnly = true // Ngăn truy cập cookie qua JavaScript
             });
             this.CreateRolesAndUsers();
         }
@@ -52,6 +56,11 @@ namespace E_Commerce_Coffee_And_Tea_Client
                 var role = new ApplicationRole("Manager");
                 roleManager.Create(role);
             }
+            if (!roleManager.RoleExists("Customer"))
+            {
+                var role = new ApplicationRole("Customer");
+                roleManager.Create(role);
+            }
 
             // Kiểm tra nếu tài khoản Admin chưa có, tạo tài khoản Admin
             var adminUser = userManager.FindByName("admin@example.com");
@@ -61,7 +70,7 @@ namespace E_Commerce_Coffee_And_Tea_Client
                 {
                     UserName = "admin@example.com",
                     Email = "admin@example.com",
-                    TenNV = "Admin",
+                    TenNguoiDung = "Admin",
                     MaVaiTro = "Admin"
                 };
                 var result = userManager.Create(user, "123456");
@@ -78,7 +87,7 @@ namespace E_Commerce_Coffee_And_Tea_Client
                         maNV = newEmployeeCode,
                         username = user.UserName,
                         matKhau = user.PasswordHash,
-                        tenNV = user.TenNV,
+                        tenNV = user.TenNguoiDung,
                         maVaiTro = "Admin"
                     };
                     _employeeService.AddEmployee(nhanVien);
@@ -93,7 +102,7 @@ namespace E_Commerce_Coffee_And_Tea_Client
                 {
                     UserName = "manager@example.com",
                     Email = "manager@example.com",
-                    TenNV = "Manager",
+                    TenNguoiDung = "Manager",
                     MaVaiTro = "Manager"
                 };
                 var result = userManager.Create(user, "123456");
@@ -110,7 +119,7 @@ namespace E_Commerce_Coffee_And_Tea_Client
                         maNV = newEmployeeCode,
                         username = user.UserName,
                         matKhau = user.PasswordHash,
-                        tenNV = user.TenNV,
+                        tenNV = user.TenNguoiDung,
                         maVaiTro = "Manager"
                     };
                     _employeeService.AddEmployee(nhanVien);

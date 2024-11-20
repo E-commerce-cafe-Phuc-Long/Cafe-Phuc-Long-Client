@@ -16,6 +16,8 @@ namespace E_Commerce_Coffee_And_Tea_Client
             //Bật Attribute Routing
             routes.MapMvcAttributeRoutes();
 
+            #region Home Routes
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
@@ -27,6 +29,11 @@ namespace E_Commerce_Coffee_And_Tea_Client
                 url: "",
                 defaults: new { controller = "Home", action = "Index" }
             );
+
+            #endregion
+
+            #region Product Routes
+
             routes.MapRoute(
                 name: "Product",
                 url: "product",
@@ -42,11 +49,47 @@ namespace E_Commerce_Coffee_And_Tea_Client
                 url: "product/search",
                 defaults: new { controller = "Product", action = "SearchProduct" }
             );
+
+            #endregion
+
+            #region Authentication Routes
+
             routes.MapRoute(
                 name: "Profile",
                 url: "profile",
                 defaults: new { controller = "Customer", action = "GetInfo" }
             );
+
+            routes.MapRoute(
+                name: "Update Information",
+                url: "profile/update-information",
+                defaults: new { controller = "Customer", action = "UpdateInformation" }
+            );
+            routes.MapRoute(
+                name: "Change Password",
+                url: "profile/change-password",
+                defaults: new { controller = "Customer", action = "UpdateAccount" }
+            );
+
+            routes.MapRoute(
+                name: "Login",
+                url: "auth/login",
+                defaults: new { controller = "Auth", action = "Login" }
+            );
+
+            routes.MapRoute(
+                name: "Register",
+                url: "auth/register",
+                defaults: new { controller = "Auth", action = "Register" }
+            );
+
+            routes.MapRoute(
+                name: "Logout",
+                url: "auth/logout",
+                defaults: new { controller = "Auth", action = "Logout" }
+            );
+
+            #endregion
         }
     }
 }

@@ -20,9 +20,18 @@
                     <li class="mx-3 text-3xl">
                         <a href="#"><i class="bx bx-bell"></i></a>
                     </li>
-                    <li class="mx-3 text-3xl">
-                        <a href="@Url.RouteUrl("Profile")"><i class="bx bx-user-circle"></i></a>
-                    </li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="mx-3 text-3xl">
+                            <a href="@Url.RouteUrl("Profile")" title="Hello, @User.Identity.Name"><i class="bx bx-user-circle"></i></a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="mx-3 text-3xl">
+                            <a href="@Url.RouteUrl("Login")"><i class="bx bx-user-circle"></i></a>
+                        </li>
+                    }
                 </ul>
             </div>
         </div>

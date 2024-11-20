@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|d:\\huit\\hk7\\phattrienungdungthongminh\\finalproject\\e-commerce_coffee_and_tea_client\\e-commerce_coffee_and_tea_client\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|d:\\huit\\hk7\\phattrienungdungthongminh\\finalproject\\e-commerce_coffee_and_tea_client\\e-commerce_coffee_and_tea_client\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\services\\employee\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\services\\employee\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|d:\\huit\\hk7\\phattrienungdungthongminh\\finalproject\\e-commerce_coffee_and_tea_client\\e-commerce_coffee_and_tea_client\\dataaccess\\repositories\\customer\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\dataaccess\\repositories\\customer\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\services\\employee\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\services\\employee\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\services\\customer\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\services\\customer\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\dataaccess\\repositories\\employee\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\dataaccess\\repositories\\employee\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|d:\\huit\\hk7\\phattrienungdungthongminh\\finalproject\\e-commerce_coffee_and_tea_client\\e-commerce_coffee_and_tea_client\\services\\identity\\custompasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\services\\identity\\custompasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\dataaccess\\repositories\\employee\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\dataaccess\\repositories\\employee\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\services\\customer\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\services\\customer\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|d:\\huit\\hk7\\phattrienungdungthongminh\\finalproject\\e-commerce_coffee_and_tea_client\\e-commerce_coffee_and_tea_client\\services\\identity\\applicationusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\services\\identity\\applicationusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,8 +39,68 @@
       "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\app_start\\unityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|d:\\huit\\hk7\\phattrienungdungthongminh\\finalproject\\e-commerce_coffee_and_tea_client\\e-commerce_coffee_and_tea_client\\views\\customer\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\views\\customer\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|d:\\huit\\hk7\\phattrienungdungthongminh\\finalproject\\e-commerce_coffee_and_tea_client\\e-commerce_coffee_and_tea_client\\dataaccess\\repositories\\customer\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\dataaccess\\repositories\\customer\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|d:\\huit\\hk7\\phattrienungdungthongminh\\finalproject\\e-commerce_coffee_and_tea_client\\e-commerce_coffee_and_tea_client\\viewmodels\\useraccountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\viewmodels\\useraccountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|d:\\huit\\hk7\\phattrienungdungthongminh\\finalproject\\e-commerce_coffee_and_tea_client\\e-commerce_coffee_and_tea_client\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|d:\\huit\\hk7\\phattrienungdungthongminh\\finalproject\\e-commerce_coffee_and_tea_client\\e-commerce_coffee_and_tea_client\\views\\shared\\_partialpage_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\views\\shared\\_partialpage_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|d:\\huit\\hk7\\phattrienungdungthongminh\\finalproject\\e-commerce_coffee_and_tea_client\\e-commerce_coffee_and_tea_client\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\services\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\services\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\dataaccess\\repositories\\employee\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\dataaccess\\repositories\\employee\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\dataaccess\\repositories\\employee\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\dataaccess\\repositories\\employee\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\services\\employee\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\services\\employee\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\dataaccess\\repositories\\product\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|solutionrelative:e-commerce_coffee_and_tea_client\\dataaccess\\repositories\\product\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F98AAB78-54A4-4F50-8ADE-8955FC9BB1FE}|E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client.csproj|D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\e-commerce_coffee_and_tea_client\\services\\product\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,19 +118,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "RouteConfig.cs",
               "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\App_Start\\RouteConfig.cs",
               "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\App_Start\\RouteConfig.cs",
               "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\App_Start\\RouteConfig.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAiwC8AAABKAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAmwEMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T09:32:32.423Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UnityConfig.cs",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\App_Start\\UnityConfig.cs",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\App_Start\\UnityConfig.cs",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\App_Start\\UnityConfig.cs",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\App_Start\\UnityConfig.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAcwDoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T03:14:02.695Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAEwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T09:52:52.511Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -76,96 +172,293 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAuwFkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T04:42:22.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Customer\\CustomerService.cs",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Services\\Customer\\CustomerService.cs",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Customer\\CustomerService.cs",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Services\\Customer\\CustomerService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAcwDIAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T02:56:34.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Customer\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Customer\\CustomerRepository.cs",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Customer\\CustomerRepository.cs",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Customer\\CustomerRepository.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAASwDQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T04:41:23.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Views\\Customer\\Profile.cshtml",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Views\\Customer\\Profile.cshtml",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Views\\Customer\\Profile.cshtml",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Views\\Customer\\Profile.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAEQAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T04:38:09.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Startup.cs",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Startup.cs",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Startup.cs",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Startup.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAYwGsAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T03:28:45.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationUserManager.cs",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Identity\\ApplicationUserManager.cs",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Services\\Identity\\ApplicationUserManager.cs",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Identity\\ApplicationUserManager.cs",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Services\\Identity\\ApplicationUserManager.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA4wCQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T08:54:46.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomPasswordHasher.cs",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Identity\\CustomPasswordHasher.cs",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Services\\Identity\\CustomPasswordHasher.cs",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Identity\\CustomPasswordHasher.cs",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Services\\Identity\\CustomPasswordHasher.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T04:22:52.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Customer\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Services\\Customer\\ICustomerService.cs",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Customer\\ICustomerService.cs",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Services\\Customer\\ICustomerService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T03:11:20.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Customer\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Customer\\ICustomerRepository.cs",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Customer\\ICustomerRepository.cs",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Customer\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T04:54:59.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserAccountVM.cs",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\ViewModels\\UserAccountVM.cs",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\ViewModels\\UserAccountVM.cs",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\ViewModels\\UserAccountVM.cs",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\ViewModels\\UserAccountVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:09:41.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RegisterVM.cs",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\ViewModels\\RegisterVM.cs",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\ViewModels\\RegisterVM.cs",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\ViewModels\\RegisterVM.cs",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\ViewModels\\RegisterVM.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T10:08:24.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Views\\Auth\\Register.cshtml",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Views\\Auth\\Register.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAADJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T03:48:20.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCAAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T09:53:14.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_PartialPage_Header.cshtml",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Views\\Shared\\_PartialPage_Header.cshtml",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Views\\Shared\\_PartialPage_Header.cshtml",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Views\\Shared\\_PartialPage_Header.cshtml",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Views\\Shared\\_PartialPage_Header.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T03:41:54.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginVM.cs",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\ViewModels\\LoginVM.cs",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\ViewModels\\LoginVM.cs",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\ViewModels\\LoginVM.cs",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\ViewModels\\LoginVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T03:47:30.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Employee\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Employee\\EmployeeRepository.cs",
               "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Employee\\EmployeeRepository.cs",
               "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Employee\\EmployeeRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAASwBcAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAEwB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T18:38:32.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Startup.cs",
-              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Startup.cs",
-              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Startup.cs",
-              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Startup.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAmwBUAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Identity\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Services\\Identity\\ApplicationUser.cs",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Identity\\ApplicationUser.cs",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Services\\Identity\\ApplicationUser.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T17:40:19.377Z",
+              "WhenOpened": "2024-11-20T02:45:53.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UnityConfig.cs",
-              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\App_Start\\UnityConfig.cs",
-              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\App_Start\\UnityConfig.cs",
-              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\App_Start\\UnityConfig.cs",
-              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\App_Start\\UnityConfig.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAqwBMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T18:40:45.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 21,
               "Title": "IEmployeeRepository.cs",
               "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Employee\\IEmployeeRepository.cs",
               "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Employee\\IEmployeeRepository.cs",
               "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Employee\\IEmployeeRepository.cs",
               "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Employee\\IEmployeeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T18:38:27.898Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IEmployeeService.cs",
-              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Employee\\IEmployeeService.cs",
-              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Services\\Employee\\IEmployeeService.cs",
-              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Employee\\IEmployeeService.cs",
-              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Services\\Employee\\IEmployeeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T18:39:11.538Z",
+              "DocumentIndex": 19,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Assets\\css\\style.css",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Assets\\css\\style.css",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Assets\\css\\style.css",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Assets\\css\\style.css",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAEUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-20T03:20:02.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 22,
               "Title": "EmployeeService.cs",
               "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Employee\\EmployeeService.cs",
               "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Services\\Employee\\EmployeeService.cs",
               "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Employee\\EmployeeService.cs",
               "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Services\\Employee\\EmployeeService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T18:39:23.77Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 23,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Controllers\\ProductController.cs",
               "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Controllers\\ProductController.cs",
               "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T18:43:10.778Z"
+              "WhenOpened": "2024-11-18T18:43:10.778Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 24,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Product\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Product\\ProductRepository.cs",
+              "ToolTip": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Product\\ProductRepository.cs",
+              "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\DataAccess\\Repositories\\Product\\ProductRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:23:55.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "ProductService.cs",
               "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Product\\ProductService.cs",
               "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Services\\Product\\ProductService.cs",
@@ -173,11 +466,12 @@
               "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Services\\Product\\ProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T19:25:24.03Z"
+              "WhenOpened": "2024-11-18T19:25:24.03Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 26,
               "Title": "IProductService.cs",
               "DocumentMoniker": "D:\\HUIT\\HK7\\PhatTrienUngDungThongMinh\\FinalProject\\E-Commerce_Coffee_And_Tea_Client\\E-Commerce_Coffee_And_Tea_Client\\Services\\Product\\IProductService.cs",
               "RelativeDocumentMoniker": "E-Commerce_Coffee_And_Tea_Client\\Services\\Product\\IProductService.cs",
@@ -185,7 +479,8 @@
               "RelativeToolTip": "E-Commerce_Coffee_And_Tea_Client\\Services\\Product\\IProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T19:25:36.975Z"
+              "WhenOpened": "2024-11-18T19:25:36.975Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -10,6 +10,7 @@ using E_Commerce_Coffee_And_Tea_Client.Services.Size;
 using E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories.Dosage;
 using E_Commerce_Coffee_And_Tea_Client.Services.Dosage;
 using E_Commerce_Coffee_And_Tea_Client.Services.Employee;
+using E_Commerce_Coffee_And_Tea_Client.Services.Customer;
 
 namespace E_Commerce_Coffee_And_Tea_Client
 {
@@ -54,6 +55,10 @@ namespace E_Commerce_Coffee_And_Tea_Client
             //Employee
             container.RegisterType<IEmployeeRepository, EmployeeRepository>();
             container.RegisterType<IEmployeeService, EmployeeService>();
+
+            //Customer
+            container.RegisterType<ICustomerRepository, CustomerRepository>();
+            container.RegisterType<ICustomerService, CustomerService>();
 
             #endregion
 

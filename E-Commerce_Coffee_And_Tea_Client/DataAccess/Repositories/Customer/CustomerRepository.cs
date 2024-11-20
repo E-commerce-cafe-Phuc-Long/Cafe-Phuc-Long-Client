@@ -16,18 +16,50 @@ namespace E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories
         {
             return _context.KhachHangs.FirstOrDefault(customer => customer.username == username);
         }
+        //public List<KhachHang> GetAllCustomers()
+        //{
+        //    return _context.KhachHangs.ToList();
+        //}
+        //public bool IsUsernameExists(string username)
+        //{
+        //    return _context.KhachHangs.Any(customer => customer.username == username);
+        //}
         public void AddCustomer(KhachHang customer)
         {
             _context.KhachHangs.InsertOnSubmit(customer);
             _context.SubmitChanges();
         }
-        public List<KhachHang> GetAllCustomers()
+        public string GetLastCustomerCode()
         {
-            return _context.KhachHangs.ToList();
+            return _context.KhachHangs
+                .OrderByDescending(kh => kh.maKH)
+                .Select(kh => kh.maKH)
+                .FirstOrDefault();
         }
-        public bool IsUsernameExists(string username)
+        public bool UpdateProfile(KhachHang updatedCustomer)
         {
-            return _context.KhachHangs.Any(customer => customer.username == username);
+            var customer = _context.KhachHangs.FirstOrDefault(kh => kh.username == updatedCustomer.username);
+            
+            if (customer == null)
+            {
+                return false;
+            }
+            else
+            {
+                customer.tenKH = updatedCustomer.tenKH;
+                customer.email = updatedCustomer.email;
+                customer.soDT = updatedCustomer.soDT;
+                customer.diaChi = updatedCustomer.diaChi;
+                customer.ngaySinh = updatedCustomer.ngaySinh;
+
+                if (updatedCustomer.matKhau != null )
+                {
+                    customer.matKhau = updatedCustomer.matKhau;
+                }
+
+                _context.SubmitChanges();
+                return true;
+            }
         }
     }
 }

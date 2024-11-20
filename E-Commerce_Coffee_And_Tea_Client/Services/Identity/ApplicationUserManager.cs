@@ -11,7 +11,11 @@ namespace E_Commerce_Coffee_And_Tea_Client.Services.Identity
 {
     public class ApplicationUserManager : UserManager<ApplicationUser>
     {
-        public ApplicationUserManager(IUserStore<ApplicationUser> store) : base(store) { }
+        public ApplicationUserManager(IUserStore<ApplicationUser> store) : base(store)
+        {
+            // Sử dụng CustomPasswordHasher làm trình băm mật khẩu
+            this.PasswordHasher = new CustomPasswordHasher();
+        }
         public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager> options, IOwinContext context)
         {
             var manager = new ApplicationUserManager(new UserStore<ApplicationUser>(context.Get<ApplicationDbContext>()));

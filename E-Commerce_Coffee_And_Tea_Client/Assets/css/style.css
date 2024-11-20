@@ -66,3 +66,9 @@ ul.single-list li:hover a{
 	background-color: #166534;
 	color: #fff;
 }
+span.field-validation-error {
+	font-size: 13px;
+	display: block;
+	margin: 0 55px 4px;
+	color: #f00;
+}
