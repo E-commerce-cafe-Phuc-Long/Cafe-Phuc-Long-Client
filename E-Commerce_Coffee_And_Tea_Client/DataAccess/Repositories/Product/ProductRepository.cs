@@ -44,5 +44,11 @@ namespace E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories
             return _context.ChiTietSanPhams
                 .FirstOrDefault(prod => prod.maSP == productId && prod.Size.maSize == sizeId);
         }
+        public List<SanPham> GetProductByCategoryId(string categoryId)
+        {
+            return _context.SanPhams
+                .Where(prod => prod.maDM == categoryId)
+                .ToList();
+        }
     }
 }

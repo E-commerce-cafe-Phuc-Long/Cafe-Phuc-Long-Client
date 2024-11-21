@@ -11,6 +11,8 @@ using E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories.Dosage;
 using E_Commerce_Coffee_And_Tea_Client.Services.Dosage;
 using E_Commerce_Coffee_And_Tea_Client.Services.Employee;
 using E_Commerce_Coffee_And_Tea_Client.Services.Customer;
+using E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories.Category;
+using E_Commerce_Coffee_And_Tea_Client.Services.Category;
 
 namespace E_Commerce_Coffee_And_Tea_Client
 {
@@ -39,6 +41,10 @@ namespace E_Commerce_Coffee_And_Tea_Client
             #endregion
 
             #region Đăng ký các repositories và services
+
+            //Category
+            container.RegisterType<ICategoryRepository, CategoryRepository>();
+            container.RegisterType<ICategoryService, CategoryService>();
 
             //Product
             container.RegisterType<IProductRepository, ProductRepository>();

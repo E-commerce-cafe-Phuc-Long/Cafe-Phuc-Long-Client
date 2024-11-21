@@ -178,6 +178,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>E-Commerce_Coffee_And_Tea.dbml</DependentUpon>
     </Compile>
+    <Compile Include="DataAccess\Repositories\Category\CategoryRepository.cs" />
+    <Compile Include="DataAccess\Repositories\Category\ICategoryRepository.cs" />
     <Compile Include="DataAccess\Repositories\Customer\ICustomerRepository.cs" />
     <Compile Include="DataAccess\Repositories\Dosage\DosageRepository.cs" />
     <Compile Include="DataAccess\Repositories\Dosage\IDosageRepository.cs" />
@@ -192,6 +194,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Category\CategoryService.cs" />
+    <Compile Include="Services\Category\ICategoryService.cs" />
     <Compile Include="Services\Customer\CustomerService.cs" />
     <Compile Include="Services\Customer\ICustomerService.cs" />
     <Compile Include="Services\Dosage\DosageService.cs" />

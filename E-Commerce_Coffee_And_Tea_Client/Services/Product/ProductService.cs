@@ -34,5 +34,9 @@ namespace E_Commerce_Coffee_And_Tea_Client.Services.Product
         {
             return _repository.GetProductDetailByIdAndSizeId(productId, sizeId);
         }
+        public List<SanPham> GetProductByCategoryId(string categoryId)
+        {
+            return _repository.GetProductByCategoryId(categoryId);
+        }
     }
 }

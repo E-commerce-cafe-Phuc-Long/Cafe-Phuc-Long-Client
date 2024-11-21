@@ -30,8 +30,7 @@
                         <div class="px-5 py-3">
                             <h3>
                                 <a 
-                                   href="@Url.RouteUrl("ProductDetail", new { productId = prod.SanPham.maSP, sizeId = prod.Size.maSize })
-"
+                                   href="@Url.RouteUrl("ProductDetail", new { productId = prod.SanPham.maSP, sizeId = prod.Size.maSize })"
                                    title="@prod.SanPham.tenSP (@prod.Size.tenSize)"
                                    >
                                     @if (prod.SanPham.tenSP.Length <= 16)

@@ -13,5 +13,6 @@ namespace E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories
         List<SanPham> GetProductList();
         List<ChiTietSanPham> GetLastProductDetailByIds(List<string> productIds);
         ChiTietSanPham GetProductDetailByIdAndSizeId(string productId, string sizeId);
+        List<SanPham> GetProductByCategoryId(string categoryId);
     }
 }
