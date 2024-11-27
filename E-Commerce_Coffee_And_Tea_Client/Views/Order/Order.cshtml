@@ -1,13 +1,18 @@
-﻿@{
+﻿@model List<E_Commerce_Coffee_And_Tea_Client.DataAccess.GioHang>
+@{
     ViewBag.Title = "Thanh toán đơn hàng";
     Layout = "~/Views/Shared/_LayoutPage_Main.cshtml";
+
+    E_Commerce_Coffee_And_Tea_Client.DataAccess.KhachHang customer = ViewBag.customer;
+    List<string> categoriesHasTeaDosage = ViewBag.categoriesHasTeaDosage;
+    decimal totalAmount = ViewBag.totalAmount;
 }
 
 <div class="w-[1280px] m-auto">
     <ul class="flex py-2">
-        <li><a href="./index.html" class="block mx-2 hover:text-green-800">Trang chủ</a></li>
+        <li><a href="@Url.RouteUrl("Home")" class="block mx-2 hover:text-green-800">Trang chủ</a></li>
         <li>/</li>
-        <li><a href="#" class="block mx-2 hover:text-green-800">Thanh toán</a></li>
+        <li><a href="@Url.RouteUrl("Order")" class="block mx-2 hover:text-green-800">Thanh toán</a></li>
     </ul>
 </div>
 <div class="w-[1280px] m-auto">
@@ -23,11 +28,11 @@
                         <div class="p-3">
                             <div class="mb-3">
                                 <span class="text-green-700 font-medium"><i class='me-2 bx bxs-location-plus'></i>Địa chỉ</span>
-                                <p class="font-light">140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, TPHCM</p>
+                                <p class="font-light">@(customer.diaChi)</p>
                             </div>
                             <div class="mb-3">
                                 <span class="text-green-700 font-medium"><i class='me-2 bx bx-phone'></i>Số điện thoại</span>
-                                <p class="font-light">099999999</p>
+                                <p class="font-light">@(customer.soDT)</p>
                             </div>
                             <div class="mb-3">
                                 <span class="text-green-700 font-medium"><i class='me-2 bx bx-timer'></i>Thời gian nhận hàng</span>
@@ -49,11 +54,11 @@
                         <div class="p-3">
                             <div class="mb-3">
                                 <span class="text-green-700 font-medium"><i class='me-2 bx bxs-location-plus'></i>Địa chỉ</span>
-                                <p class="font-light">140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, TPHCM</p>
+                                <p class="font-light">@(customer.diaChi)</p>
                             </div>
                             <div class="mb-3">
                                 <span class="text-green-700 font-medium"><i class='me-2 bx bx-phone'></i>Số điện thoại</span>
-                                <p class="font-light">099999999</p>
+                                <p class="font-light">@(customer.soDT)</p>
                             </div>
                             <div class="mb-3">
                                 <span class="text-green-700 font-medium"><i class='me-2 bx bx-timer'></i>Thời gian nhận hàng</span>
@@ -75,126 +80,48 @@
                 <div class="flex-1">
                     <h2 class="text font-semibold my-3 text-green-700"><i class='bx bxs-shopping-bag'></i>Giỏ hàng của bạn</h2>
                     <div class="mb-3 h-[352px] overflow-auto">
-                        <div class="flex items-center border-b mb-3">
-                            <div class="w-[75px] h-[75px] bg-gray-100 rounded-lg mx-3">
-                                <img src="https://hcm.fstorage.vn/images/2024/10/remove-bg-ai_1729053816008-20241016044849.png" alt="" class="w-[60px] m-auto">
-                            </div>
-                            <div class="w-4/5 mx-3">
-                                <h2 class="text-green-700">Trà Vài Lài</h2>
-                                <p class="font-thin text-sm">Size: L</p>
-                                <p class="font-thin text-sm">Ngọt: Bình thường, Đá: Bình thường</p>
-                                <div class="flex items-center justify-between">
-                                    <p class="text-green-700">60.000 ₫</p>
-                                    <div class="flex me-5">
-                                        <div class="cursor-pointer"><i class='bx bxs-minus-square text-4xl text-green-800'></i></div>
-                                        <p class="self-center w-[30px] text-center">999</p>
-                                        <div class="cursor-pointer"><i class='bx bxs-plus-square text-4xl text-green-800'></i></div>
+                        @foreach (var item in Model)
+                        {
+                            <div class="flex items-center border-b mb-3">
+                                <div class="w-[75px] h-[75px] bg-gray-100 rounded-lg mx-3">
+                                    <img src="@(item.ChiTietSanPham.SanPham.hinhAnh)" alt="" class="w-[60px] m-auto">
+                                </div>
+                                <div class="w-4/5 mx-3">
+                                    <h2 class="text-green-700">@(item.ChiTietSanPham.SanPham.tenSP)</h2>
+                                    <p class="font-thin text-sm">Size: @(item.ChiTietSanPham.Size.tenSize)</p>
+                                    @if (categoriesHasTeaDosage.Contains(item.ChiTietSanPham.SanPham.DanhMuc.maDM))
+                                    {
+                                        <p class="font-thin text-sm">Ngọt: @(item.LieuLuong1.tenLL), Đá: @(item.LieuLuong.tenLL), Trà: @(item.LieuLuong2.tenLL)</p>
+                                    }
+                                    else
+                                    {
+                                    <p class="font-thin text-sm">Ngọt: @(item.LieuLuong1.tenLL), Đá: @(item.LieuLuong.tenLL)</p>
+                                    }
+                                    <div class="flex items-center justify-between">
+                                        <p class="text-green-700">@string.Format("{0:N0} ₫", item.donGia)</p>
+                                        <div class="flex me-5">
+                                            <div class="cursor-pointer"><i class='bx bxs-minus-square text-4xl text-green-800'></i></div>
+                                            <p class="self-center w-[30px] text-center">@(item.soLuongDatHang)</p>
+                                            <div class="cursor-pointer"><i class='bx bxs-plus-square text-4xl text-green-800'></i></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="text-center">
-                                <a href="#" class="text-blue-700 text-xl"><i class='bx bx-pencil'></i></a>
-                                <a href="#" class="text-red-700 text-xl"><i class='bx bx-trash'></i></a>
-                            </div>
-                        </div>
-                        <div class="flex items-center border-b mb-3">
-                            <div class="w-[75px] h-[75px] bg-gray-100 rounded-lg mx-3">
-                                <img src="https://hcm.fstorage.vn/images/2024/10/remove-bg-ai_1729053816008-20241016044849.png" alt="" class="w-[60px] m-auto">
-                            </div>
-                            <div class="w-4/5 mx-3">
-                                <h2 class="text-green-700">Trà Vài Lài</h2>
-                                <p class="font-thin text-sm">Size: L</p>
-                                <p class="font-thin text-sm">Ngọt: Bình thường, Đá: Bình thường</p>
-                                <div class="flex items-center justify-between">
-                                    <p class="text-green-700">60.000 ₫</p>
-                                    <div class="flex me-5">
-                                        <div class="cursor-pointer"><i class='bx bxs-minus-square text-4xl text-green-800'></i></div>
-                                        <p class="self-center w-[30px] text-center">999</p>
-                                        <div class="cursor-pointer"><i class='bx bxs-plus-square text-4xl text-green-800'></i></div>
-                                    </div>
+                                <div class="text-center">
+                                    <a href="#" class="text-blue-700 text-xl"><i class='bx bx-pencil'></i></a>
+                                    <a href="#" class="text-red-700 text-xl"><i class='bx bx-trash'></i></a>
                                 </div>
                             </div>
-                            <div class="text-center">
-                                <a href="#" class="text-blue-700 text-xl"><i class='bx bx-pencil'></i></a>
-                                <a href="#" class="text-red-700 text-xl"><i class='bx bx-trash'></i></a>
-                            </div>
-                        </div>
-                        <div class="flex items-center border-b mb-3">
-                            <div class="w-[75px] h-[75px] bg-gray-100 rounded-lg mx-3">
-                                <img src="https://hcm.fstorage.vn/images/2024/10/remove-bg-ai_1729053816008-20241016044849.png" alt="" class="w-[60px] m-auto">
-                            </div>
-                            <div class="w-4/5 mx-3">
-                                <h2 class="text-green-700">Trà Vài Lài</h2>
-                                <p class="font-thin text-sm">Size: L</p>
-                                <p class="font-thin text-sm">Ngọt: Bình thường, Đá: Bình thường</p>
-                                <div class="flex items-center justify-between">
-                                    <p class="text-green-700">60.000 ₫</p>
-                                    <div class="flex me-5">
-                                        <div class="cursor-pointer"><i class='bx bxs-minus-square text-4xl text-green-800'></i></div>
-                                        <p class="self-center w-[30px] text-center">999</p>
-                                        <div class="cursor-pointer"><i class='bx bxs-plus-square text-4xl text-green-800'></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <a href="#" class="text-blue-700 text-xl"><i class='bx bx-pencil'></i></a>
-                                <a href="#" class="text-red-700 text-xl"><i class='bx bx-trash'></i></a>
-                            </div>
-                        </div>
-                        <div class="flex items-center border-b mb-3">
-                            <div class="w-[75px] h-[75px] bg-gray-100 rounded-lg mx-3">
-                                <img src="https://hcm.fstorage.vn/images/2024/10/remove-bg-ai_1729053816008-20241016044849.png" alt="" class="w-[60px] m-auto">
-                            </div>
-                            <div class="w-4/5 mx-3">
-                                <h2 class="text-green-700">Trà Vài Lài</h2>
-                                <p class="font-thin text-sm">Size: L</p>
-                                <p class="font-thin text-sm">Ngọt: Bình thường, Đá: Bình thường</p>
-                                <div class="flex items-center justify-between">
-                                    <p class="text-green-700">60.000 ₫</p>
-                                    <div class="flex me-5">
-                                        <div class="cursor-pointer"><i class='bx bxs-minus-square text-4xl text-green-800'></i></div>
-                                        <p class="self-center w-[30px] text-center">999</p>
-                                        <div class="cursor-pointer"><i class='bx bxs-plus-square text-4xl text-green-800'></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <a href="#" class="text-blue-700 text-xl"><i class='bx bx-pencil'></i></a>
-                                <a href="#" class="text-red-700 text-xl"><i class='bx bx-trash'></i></a>
-                            </div>
-                        </div>
-                        <div class="flex items-center border-b mb-3">
-                            <div class="w-[75px] h-[75px] bg-gray-100 rounded-lg mx-3">
-                                <img src="https://hcm.fstorage.vn/images/2024/10/remove-bg-ai_1729053816008-20241016044849.png" alt="" class="w-[60px] m-auto">
-                            </div>
-                            <div class="w-4/5 mx-3">
-                                <h2 class="text-green-700">Trà Vài Lài</h2>
-                                <p class="font-thin text-sm">Size: L</p>
-                                <p class="font-thin text-sm">Ngọt: Bình thường, Đá: Bình thường</p>
-                                <div class="flex items-center justify-between">
-                                    <p class="text-green-700">60.000 ₫</p>
-                                    <div class="flex me-5">
-                                        <div class="cursor-pointer"><i class='bx bxs-minus-square text-4xl text-green-800'></i></div>
-                                        <p class="self-center w-[30px] text-center">999</p>
-                                        <div class="cursor-pointer"><i class='bx bxs-plus-square text-4xl text-green-800'></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <a href="#" class="text-blue-700 text-xl"><i class='bx bx-pencil'></i></a>
-                                <a href="#" class="text-red-700 text-xl"><i class='bx bx-trash'></i></a>
-                            </div>
-                        </div>
+                        }
                     </div>
                     <div class="mb-3">
                         <h2 class="text-green-700 font-semibold">Thông tin thanh toán</h2>
                         <div class="flex justify-between mx-3">
                             <p>Tổng tiền tạm tính: </p>
-                            <p>999.000 ₫</p>
+                            <p>@string.Format("{0:N0} ₫", totalAmount)</p>
                         </div>
                         <div class="flex justify-between mx-3">
                             <p>Phí vận chuyển: </p>
-                            <p>0 ₫</p>
+                            <p>12.000 ₫</p>
                         </div>
                         <div class="flex justify-between mx-3">
                             <p>Mã giảm giá: </p>
@@ -202,7 +129,7 @@
                         </div>
                         <div class="flex justify-between mx-3">
                             <p>Tổng tiền (Đã có VAT): </p>
-                            <p class="font-semibold text-green-600">999.000 ₫</p>
+                            <p class="font-semibold text-green-600">@string.Format("{0:N0} ₫", totalAmount + 12000)</p>
                         </div>
                     </div>
                     <div>
@@ -233,7 +160,7 @@
                     </div>
                 </div>
             </div>
-        </form>
+         </form>   
     </div>
 </div>
 <div class="fixed top-0 left-0 bottom-0 right-0 z-10 bg-modal hidden">

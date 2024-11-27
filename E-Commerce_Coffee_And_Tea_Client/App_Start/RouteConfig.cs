@@ -90,6 +90,16 @@ namespace E_Commerce_Coffee_And_Tea_Client
             );
 
             #endregion
+
+            #region Order Routes
+
+            routes.MapRoute(
+                name: "Order",
+                url: "order",
+                defaults: new { controller = "Order", action = "Order" }
+            );
+
+            #endregion
         }
     }
 }

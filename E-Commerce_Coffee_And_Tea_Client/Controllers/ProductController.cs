@@ -53,6 +53,9 @@ namespace E_Commerce_Coffee_And_Tea_Client.Controllers
 
             ViewBag.dosages = _dosageService.GetAll();
 
+            List<string> CategoriesHasTeaDosage = new List<string> { "DM001", "DM002" };
+            ViewBag.categoriesHasTeaDosage = CategoriesHasTeaDosage;
+
             return View(details);
         }
         [Route("search")]

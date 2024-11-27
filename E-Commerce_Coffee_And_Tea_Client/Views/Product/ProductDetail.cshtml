@@ -5,8 +5,87 @@
 
     List<E_Commerce_Coffee_And_Tea_Client.DataAccess.Size> sizes = ViewBag.sizes;
     List<E_Commerce_Coffee_And_Tea_Client.DataAccess.LieuLuong> dosages = ViewBag.dosages;
+    List<string> categoriesHasTeaDosage = ViewBag.categoriesHasTeaDosage;
 }
+@section LibraryJS{
+    <script>
+        $(document).ready(function () {
+            // Thay đổi giữa các nút liều lượng "Đường", "Trà" và "Đá"
+            $(".sweet-dosage-btn").on("click", function () {
+                $(this).siblings().removeClass("sweet-active");
+                $(this).addClass("sweet-active");
+            });
+            $(".tea-dosage-btn").on("click", function () {
+                $(this).siblings().removeClass("tea-active");
+                $(this).addClass("tea-active");
+            });
+            $(".ice-dosage-btn").on("click", function () {
+                $(this).siblings().removeClass("ice-active");
+                $(this).addClass("ice-active");
+            });
 
+            //Khi người dùng bấm nút tăng/giảm số lượng (từ 1 - 99)
+            $('.plus-btn').click(function () {
+                var currentValue = parseInt($('#quantity').text());
+                if (currentValue < 99) {
+                    $('#quantity').text(currentValue + 1);
+                }
+            });
+            $('.minus-btn').click(function () {
+                var currentValue = parseInt($('#quantity').text());
+                if (currentValue > 1) {
+                    $('#quantity').text(currentValue - 1);
+                }
+            });
+
+            //Thêm sản phẩm vào giỏ hàng
+            async function getCustomerId()
+            {
+                try {
+                    const username = '@(User.Identity.Name)';
+                    const response = await $.ajax({
+                        url: '/api/customer/get-customer-by-username',
+                        type: 'GET',
+                        contentType: 'application/json',
+                        data: { username: username },
+                    });
+                    return response.data.maKH;
+                }
+                catch (error) {
+                    console.log('Có lỗi xảy ra, vui lòng thử lại!', error);
+                }
+            }
+            $("#addToCart").on('click', async function () {
+                const maKH = await getCustomerId();
+                if (!maKH) {
+                    throw "Không có mã khách hàng";
+                }
+                const data = {
+                    MaKH: maKH,
+                    MaCTSP: '@Model.maCTSP',
+                    SoLuongDatHang: parseInt($('#quantity').text()),
+                    DonGia: @Model.donGia,
+                    ThanhTien : parseInt($('#quantity').text()) * @Model.donGia,
+                    LieuLuongNgot: $(".sweet-active").data("dosage-id"),
+                    LieuLuongTra: $(".tea-active") ? $(".tea-active").data("dosage-id") : null,
+                    LieuLuongDa: $(".ice-active").data("dosage-id"),
+                }
+                try {
+                    const response = await $.ajax({
+                        url: '/api/cart/add-to-cart',
+                        type: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify(data)
+                    });
+                    console.log('Thêm vào giỏ hàng thành công');
+                }
+                catch (error) {
+                    console.log('Có lỗi xảy ra, vui lòng thử lại!', error);
+                }
+            });
+        });
+    </script>
+}
 <div class="w-[1280px] m-auto">
     <ul class="flex py-2">
         <li><a href="@Url.RouteUrl("Home")" class="block mx-2 hover:text-green-800">Trang chủ</a></li>
@@ -19,7 +98,7 @@
         <div class="flex">
             <div class="w-1/2 self-center">
                 <div class="p-10 w-1/2 m-auto bg-gray-200 rounded-2xl">
-                    <img src="https://hcm.fstorage.vn/images/2022/65000094-65000102-tra-sua-phuc-long-_3682b729-4ffc-4956-abb3-7026070663c2-og.png" alt="" class="w-[260px] m-auto">
+                    <img src="@(Model.SanPham.hinhAnh)" alt="@Model.SanPham.tenSP" class="w-[260px] m-auto">
                 </div>
             </div>
             <div class="w-1/2">
@@ -29,9 +108,9 @@
                     <div class="flex justify-between items-center">
                         <p class="font-medium text-green-700 text-xl"><span>@string.Format("{0:N0} ₫", Model.donGia)</span></p>
                         <div class="flex me-5">
-                            <div class="cursor-pointer"><i class='bx bxs-minus-square text-4xl text-green-800'></i></div>
-                            <p class="self-center w-[30px] text-center">1</p>
-                            <div class="cursor-pointer"><i class='bx bxs-plus-square text-4xl text-green-800'></i></div>
+                            <div class="cursor-pointer minus-btn"><i class='bx bxs-minus-square text-4xl text-green-800'></i></div>
+                            <p class="self-center w-[30px] text-center" id="quantity">1</p>
+                            <div class="cursor-pointer plus-btn"><i class='bx bxs-plus-square text-4xl text-green-800'></i></div>
                         </div>
                     </div>
                 </div>
@@ -42,37 +121,52 @@
                         {
                             if (@Model.Size.maSize == s.maSize)
                             {
-                                <a 
-                                   href="@Url.RouteUrl("ProductDetail", new { productId = Model.maSP, sizeId = s.maSize })" 
-                                   class="size-active w-[80px] py-3 my-1 me-2 border rounded-xl text-center font-medium bg-gray-100 cursor-pointer"
-                                   >@s.tenSize</a>
+                                <a href="@Url.RouteUrl("ProductDetail", new { productId = Model.maSP, sizeId = s.maSize })"
+                                   class="size-active w-[80px] py-3 my-1 me-2 border rounded-xl text-center font-medium bg-gray-100 cursor-pointer">@s.tenSize</a>
                             }
                             else
                             {
-                                <a 
-                                   href="@Url.RouteUrl("ProductDetail", new { productId = Model.maSP, sizeId = s.maSize })" 
-                                   class="w-[80px] py-3 my-1 me-2 border rounded-xl text-center font-medium bg-gray-100 cursor-pointer"
-                                   >@s.tenSize</a>
+                                <a href="@Url.RouteUrl("ProductDetail", new { productId = Model.maSP, sizeId = s.maSize })"
+                                   class="w-[80px] py-3 my-1 me-2 border rounded-xl text-center font-medium bg-gray-100 cursor-pointer">@s.tenSize</a>
                             }
                         }
                     </div>
                 </div>
                 <div class="mb-2">
-                    <h2 class="font-bold text-green-700">Ngọt</h2>
+                    <h2 class="font-bold text-green-700">Đường</h2>
                     <div class="flex">
                         @foreach (var d in dosages)
                         {
                             if (d.maLL.Equals("LL002"))
                             {
-                                <div class="sweet-active min-w-[80px] py-3 px-2 my-1 me-2 border rounded-xl text-center font-medium bg-gray-100 cursor-pointer">@d.tenLL</div>
+                                <div class="sweet-dosage-btn sweet-active min-w-[80px] py-3 px-2 my-1 me-2 border rounded-xl text-center font-medium bg-gray-100 cursor-pointer" data-dosage-id="@d.maLL">@d.tenLL</div>
                             }
                             else
                             {
-                                <div class="min-w-[80px] py-3 px-2 my-1 me-2 border rounded-xl text-center font-medium bg-gray-100 cursor-pointer">@d.tenLL</div>
+                                <div class="sweet-dosage-btn min-w-[80px] py-3 px-2 my-1 me-2 border rounded-xl text-center font-medium bg-gray-100 cursor-pointer" data-dosage-id="@d.maLL">@d.tenLL</div>
                             }
                         }
                     </div>
                 </div>
+                @if (categoriesHasTeaDosage.Contains(Model.SanPham.DanhMuc.maDM))
+                {
+                    <div class="mb-2">
+                        <h2 class="font-bold text-green-700">Trà</h2>
+                        <div class="flex">
+                            @foreach (var d in dosages)
+                            {
+                                if (d.maLL.Equals("LL002"))
+                                {
+                                    <div class="tea-dosage-btn tea-active min-w-[80px] py-3 px-2 my-1 me-2 border rounded-xl text-center font-medium bg-gray-100 cursor-pointer" data-dosage-id="@d.maLL">@d.tenLL</div>
+                                }
+                                else
+                                {
+                                    <div class="tea-dosage-btn min-w-[80px] py-3 px-2 my-1 me-2 border rounded-xl text-center font-medium bg-gray-100 cursor-pointer" data-dosage-id="@d.maLL">@d.tenLL</div>
+                                }
+                            }
+                        </div>
+                    </div>
+                }
                 <div class="mb-2">
                     <h2 class="font-bold text-green-700">Đá</h2>
                     <div class="flex">
@@ -80,17 +174,17 @@
                         {
                             if (d.maLL.Equals("LL002"))
                             {
-                                <div class="sweet-active min-w-[80px] py-3 px-2 my-1 me-2 border rounded-xl text-center font-medium bg-gray-100 cursor-pointer">@d.tenLL</div>
+                                <div class="ice-dosage-btn ice-active min-w-[80px] py-3 px-2 my-1 me-2 border rounded-xl text-center font-medium bg-gray-100 cursor-pointer" data-dosage-id="@d.maLL">@d.tenLL</div>
                             }
                             else
                             {
-                                <div class="min-w-[80px] py-3 px-2 my-1 me-2 border rounded-xl text-center font-medium bg-gray-100 cursor-pointer">@d.tenLL</div>
+                                <div class="ice-dosage-btn min-w-[80px] py-3 px-2 my-1 me-2 border rounded-xl text-center font-medium bg-gray-100 cursor-pointer" data-dosage-id="@d.maLL">@d.tenLL</div>
                             }
                         }
                     </div>
                 </div>
                 <div class="mb-2">
-                    <button class="block border px-10 py-2 my-5 rounded-xl bg-green-800 text-white"><i class='bx bx-cart-add pe-2'></i>Thêm vào giỏ hàng</button>
+                    <button id="addToCart" class="block border px-10 py-2 my-5 rounded-xl bg-green-800 text-white"><i class='bx bx-cart-add pe-2'></i>Thêm vào giỏ hàng</button>
                 </div>
             </div>
         </div>

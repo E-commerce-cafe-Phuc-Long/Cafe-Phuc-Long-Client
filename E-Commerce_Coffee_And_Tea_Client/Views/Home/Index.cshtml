@@ -45,66 +45,6 @@
             Trải qua hơn 50 năm chắt chiu tinh hoa từ những búp trà xanh và hạt cà phê thượng hạng
             cùng mong muốn mang lại cho khách hàng những trải nghiệm giá trị nhất khi thưởng thức.
         </p>
-        <div class="flex items-center flex-wrap gap-2">
-            <div class="rounded-xl hover:shadow-full-line w-gap-2 border">
-                <div class="p-5 bg-gray-100">
-                    <img src="https://hcm.fstorage.vn/images/2024/10/remove-bg-ai_1729053816008-20241016044849.png" alt="" class="w-[100px] m-auto">
-                </div>
-                <div class="px-5 py-3">
-                    <h3>Trà sữa Ô long Bách Hoa (L)</h3>
-                    <p class="font-medium">65.000 ₫</p>
-                </div>
-                <!-- <a href="#" class="block w-[158px] text-center m-auto mb-3 border py-2 rounded-xl bg-green-800 text-white"><i class='bx bx-cart-add pe-2'></i>Đặt mua</a> -->
-                <button class="block m-auto border px-10 py-2 mb-3 rounded-xl bg-green-800 text-white"><i class='bx bx-cart-add pe-2'></i>Đặt mua</button>
-            </div>
-            <div class="rounded-xl hover:shadow-full-line w-gap-2 border">
-                <div class="p-5 bg-gray-100">
-                    <img src="https://hcm.fstorage.vn/images/2024/10/remove-bg-ai_1729053816008-20241016044849.png" alt="" class="w-[100px] m-auto">
-                </div>
-                <div class="px-5 py-3">
-                    <h3>Trà sữa Ô long Bách Hoa (L)</h3>
-                    <p class="font-medium">65.000 ₫</p>
-                </div>
-                <!-- <a href="#" class="block w-[158px] text-center m-auto mb-3 border py-2 rounded-xl bg-green-800 text-white"><i class='bx bx-cart-add pe-2'></i>Đặt mua</a> -->
-                <button class="block m-auto border px-10 py-2 mb-3 rounded-xl bg-green-800 text-white"><i class='bx bx-cart-add pe-2'></i>Đặt mua</button>
-            </div>
-            <div class="rounded-xl hover:shadow-full-line w-gap-2 border">
-                <div class="p-5 bg-gray-100">
-                    <img src="https://hcm.fstorage.vn/images/2024/10/remove-bg-ai_1729053816008-20241016044849.png" alt="" class="w-[100px] m-auto">
-                </div>
-                <div class="px-5 py-3">
-                    <h3>Trà sữa Ô long Bách Hoa (L)</h3>
-                    <p class="font-medium">65.000 ₫</p>
-                </div>
-                <!-- <a href="#" class="block w-[158px] text-center m-auto mb-3 border py-2 rounded-xl bg-green-800 text-white"><i class='bx bx-cart-add pe-2'></i>Đặt mua</a> -->
-                <button class="block m-auto border px-10 py-2 mb-3 rounded-xl bg-green-800 text-white"><i class='bx bx-cart-add pe-2'></i>Đặt mua</button>
-            </div>
-            <div class="rounded-xl hover:shadow-full-line w-gap-2 border">
-                <div class="p-5 bg-gray-100">
-                    <img src="https://hcm.fstorage.vn/images/2024/10/remove-bg-ai_1729053816008-20241016044849.png" alt="" class="w-[100px] m-auto">
-                </div>
-                <div class="px-5 py-3">
-                    <h3>Trà sữa Ô long Bách Hoa (L)</h3>
-                    <p class="font-medium">65.000 ₫</p>
-                </div>
-                <!-- <a href="#" class="block w-[158px] text-center m-auto mb-3 border py-2 rounded-xl bg-green-800 text-white"><i class='bx bx-cart-add pe-2'></i>Đặt mua</a> -->
-                <button class="block m-auto border px-10 py-2 mb-3 rounded-xl bg-green-800 text-white"><i class='bx bx-cart-add pe-2'></i>Đặt mua</button>
-            </div>
-            <div class="rounded-xl hover:shadow-full-line w-gap-2 border">
-                <div class="p-5 bg-gray-100">
-                    <img src="https://hcm.fstorage.vn/images/2024/10/remove-bg-ai_1729053816008-20241016044849.png" alt="" class="w-[100px] m-auto">
-                </div>
-                <div class="px-5 py-3">
-                    <h3>Trà sữa Ô long Bách Hoa (L)</h3>
-                    <p class="font-medium">65.000 ₫</p>
-                </div>
-                <!-- <a href="#" class="block w-[158px] text-center m-auto mb-3 border py-2 rounded-xl bg-green-800 text-white"><i class='bx bx-cart-add pe-2'></i>Đặt mua</a> -->
-                <button class="block m-auto border px-10 py-2 mb-3 rounded-xl bg-green-800 text-white"><i class='bx bx-cart-add pe-2'></i>Đặt mua</button>
-            </div>
-            <div class="m-auto">
-                <button class="block border border-green-800 text-green-800 hover:text-white hover:bg-green-700 px-10 py-2 m-3 rounded-lg font-medium">Xem thêm</button>
-            </div>
-        </div>
     </div>
     @foreach (var category in Model)
     {
@@ -115,7 +55,7 @@
                 {
                     <div class="rounded-xl hover:shadow-full-line w-gap-2 border">
                         <div class="p-5 bg-gray-100">
-                            <img src="~/Assets/img/@prod.SanPham.hinhAnh" alt="@prod.SanPham.hinhAnh" class="m-auto h-[135px]">
+                            <img src="@(prod.SanPham.hinhAnh)" alt="@prod.SanPham.tenSP" class="m-auto h-[135px]">
                         </div>
                         <div class="px-5 py-3">
                             <h3>
