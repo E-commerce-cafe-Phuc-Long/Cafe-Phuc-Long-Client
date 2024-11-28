@@ -25,10 +25,11 @@ namespace E_Commerce_Coffee_And_Tea_Client.ViewModels
         public decimal TotalWithVAT { get; set; }
 
         // Phương thức thanh toán
-        public string PaymentMethod { get; set; }
+        public List<PhuongThucThanhToan> PaymentMethod { get; set; }
+        public string MaPhuongThucThanhToan { get; set; }
 
         // Trạng thái đơn hàng
-        public string maTrangThai { get; set; }
+        public string MaTrangThai { get; set; }
 
         // Điều khoản và chính sách
         public bool AgreeWithPolicy { get; set; }

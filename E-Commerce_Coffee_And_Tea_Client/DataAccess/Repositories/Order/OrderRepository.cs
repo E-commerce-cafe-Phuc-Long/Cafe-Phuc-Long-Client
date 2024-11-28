@@ -29,5 +29,10 @@ namespace E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories.Order
                 .Select(dh => dh.maDH)
                 .FirstOrDefault();
         }
+        //Payment Method
+        public List<PhuongThucThanhToan> GetPaymentMethods()
+        {
+            return _context.PhuongThucThanhToans.ToList();
+        }
     }
 }

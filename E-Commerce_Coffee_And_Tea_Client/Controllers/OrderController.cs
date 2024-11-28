@@ -33,7 +33,7 @@ namespace E_Commerce_Coffee_And_Tea_Client.Controllers
         {
             var customer = _customerService.GetCustomerByUsername(User.Identity.Name);
             var customerId = customer.maKH;
-
+            var paymentMethods = _orderService.GetPaymentMethods();
             var cartItems = _cartService.ShowCartItemsByCustomerId(customerId);
 
             ViewBag.totalAmount = cartItems.Sum(item => item.thanhTien);
@@ -43,7 +43,7 @@ namespace E_Commerce_Coffee_And_Tea_Client.Controllers
             decimal shippingFee = 12000;
             var orderVM = new OrderVM
             {
-                maTrangThai = "TTDH001",
+                MaTrangThai = "TTDH001",
                 MaKH = customer.maKH,
                 TenKH = customer.tenKH,
                 DiaChi = customer.diaChi,
@@ -51,7 +51,8 @@ namespace E_Commerce_Coffee_And_Tea_Client.Controllers
                 CartItems = cartItems,
                 TotalAmount = (decimal)cartItems.Sum(item => item.thanhTien),
                 ShippingFee = shippingFee,
-                TotalWithVAT = (decimal)cartItems.Sum(item => item.thanhTien) + shippingFee
+                TotalWithVAT = (decimal)cartItems.Sum(item => item.thanhTien) + shippingFee,
+                PaymentMethod = paymentMethods,
             };
 
             return View(orderVM);

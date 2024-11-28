@@ -11,5 +11,7 @@ namespace E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories.Order
         void GenerateOrder(DonHang order);
         void AddOrderDetails(ChiTietDonHang details);
         string GetLastOrderCode();
+        //Payment method
+        List<PhuongThucThanhToan> GetPaymentMethods();
     }
 }

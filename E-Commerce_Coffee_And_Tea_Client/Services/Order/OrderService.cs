@@ -29,11 +29,11 @@ namespace E_Commerce_Coffee_And_Tea_Client.Services.Order
             {
                 maDH = orderCode,
                 ngayLapDH = DateTime.Now.Date,
-                tongTien = orderVM.TotalAmount,
-                maPT = null,
+                tongTien = (decimal)cartItems.Sum(item => item.thanhTien),
+                maPT = orderVM.MaPhuongThucThanhToan,
                 maKH = orderVM.MaKH,
                 maNV = null,
-                //maTT = orderVM.maTrangThai
+                //maTT = orderVM.MaTrangThai,
                 maTT = "TTDH001"
             };
             _orderRepository.GenerateOrder(order);
@@ -87,7 +87,7 @@ namespace E_Commerce_Coffee_And_Tea_Client.Services.Order
         {
             var lastOrderCode = _orderRepository.GetLastOrderCode();
 
-            // Nếu chưa có khách hàng thì khởi tạo mã NV: NV001
+            // Nếu chưa có đơn hàng thì khởi tạo mã DH: DH001
             if (string.IsNullOrEmpty(lastOrderCode))
             {
                 return "DH001";
@@ -96,6 +96,12 @@ namespace E_Commerce_Coffee_And_Tea_Client.Services.Order
             var number = int.Parse(lastOrderCode.Substring(2));
 
             return $"DH{(number + 1):D3}";
+        }
+
+        //Payment Method
+        public List<PhuongThucThanhToan> GetPaymentMethods()
+        {
+            return _orderRepository.GetPaymentMethods();
         }
     }
 }

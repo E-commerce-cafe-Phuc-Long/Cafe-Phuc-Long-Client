@@ -134,23 +134,24 @@
                     </div>
                     <div>
                         <h2 class="text-green-700 font-semibold">Phương thức thanh toán</h2>
-                        <input type="text" name="maTrangThai" value="" hidden/>
-                        <div class="flex mx-3">
-                            <input type="radio" name="paymentMethod" id="" checked>
-                            <label for="" class="mx-3">Tiền mặt</label>
-                        </div>
-                        <div class="flex mx-3">
-                            <input type="radio" name="paymentMethod" id="">
-                            <label for="" class="mx-3">Thẻ ngân hàng/ Thẻ tín dụng</label>
-                        </div>
-                        <div class="flex mx-3">
-                            <input type="radio" name="paymentMethod" id="">
-                            <label for="" class="mx-3">Ví MoMo</label>
-                        </div>
-                        <div class="flex mx-3">
-                            <input type="radio" name="paymentMethod" id="">
-                            <label for="" class="mx-3">Ví ZaloPay</label>
-                        </div>
+                        <input type="text" name="maTrangThai" value="" hidden />
+                        @foreach (var method in Model.PaymentMethod)
+                        {
+                            if (method.maPT == "PT001")
+                            {
+                                <div class="flex mx-3">
+                                    <input type="radio" name="MaPhuongThucThanhToan" id="@(method.maPT)" value="@(method.maPT)" checked>
+                                    <label for="@(method.maPT)" class="mx-3">@(method.tenPT)</label>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="flex mx-3">
+                                    <input type="radio" name="MaPhuongThucThanhToan" id="@(method.maPT)" value="@(method.maPT)">
+                                    <label for="@(method.maPT)" class="mx-3">@(method.tenPT)</label>
+                                </div>
+                            }
+                        }
                         <div class="my-3">
                             <input type="checkbox" name="" id="policy">
                             <label for="policy" class="">Tôi đã đọc, hiểu và đồng ý với tất cả các <a href="#" class="text-green-700 underline"> điều khoản, điều kiện và chính sách</a> liên quan</label>

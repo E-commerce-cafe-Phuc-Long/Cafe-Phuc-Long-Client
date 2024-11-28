@@ -17,11 +17,19 @@ namespace E_Commerce_Coffee_And_Tea_Client.Services.Identity
             // Chuyển đổi mật khẩu thành mảng byte (dạng mã hóa UTF-8)
             byte[] passwordBytes = Encoding.UTF8.GetBytes(password);
 
-            // Băm mật khẩu (sử dụng SHA-256)
+            //// Băm mật khẩu (sử dụng SHA-256)
             byte[] hashBytes = sha256.ComputeHash(passwordBytes);
 
-            // Chuyển mảng byte kết quả thành chuỗi Base64 và trả về
-            return Convert.ToBase64String(hashBytes);
+            //// Chuyển mảng byte kết quả thành chuỗi Base64 và trả về
+            //return Convert.ToBase64String(hashBytes);
+
+            // sử dụng StringBuilder giúp lưu trữ chuỗi trong quá trình lặp
+            StringBuilder hex = new StringBuilder();
+            foreach (byte b in hashBytes)
+            {
+                hex.Append(b.ToString("x2")); //x: Hiển thị số ở dạng hexadecimal chữ thường - 2 : là số ký tự 
+            }
+            return hex.ToString();
         }
         public PasswordVerificationResult VerifyHashedPassword(string hashedPassword, string providedPassword) 
         {
