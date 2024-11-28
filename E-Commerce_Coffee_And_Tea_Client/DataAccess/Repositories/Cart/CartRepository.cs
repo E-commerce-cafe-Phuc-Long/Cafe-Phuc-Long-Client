@@ -1,4 +1,5 @@
-﻿using System;
+﻿using E_Commerce_Coffee_And_Tea_Client.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -13,9 +14,11 @@ namespace E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories.Cart
         {
             _context = context;
         }
-        public List<GioHang> ShowCartItems()
+        public List<GioHang> ShowCartItemsByCustomerId(string customerId)
         {
-            return _context.GioHangs.ToList();
+            return _context.GioHangs
+                .Where(g => g.maKH == customerId)
+                .ToList();
         }
         public void AddToCart(GioHang cart)
         {
@@ -49,6 +52,12 @@ namespace E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories.Cart
                 _context.GioHangs.InsertOnSubmit(cart);
                 _context.SubmitChanges();
             }
+        }
+        public void DeleteCart()
+        {
+            var lst = _context.GioHangs.ToList();
+            _context.GioHangs.DeleteAllOnSubmit(lst);
+            _context.SubmitChanges();
         }
         //public string GetLastCartCode()
         //{

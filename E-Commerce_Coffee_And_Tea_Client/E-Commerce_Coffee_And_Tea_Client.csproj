@@ -221,6 +221,8 @@
     <Compile Include="DataAccess\Repositories\Dosage\IDosageRepository.cs" />
     <Compile Include="DataAccess\Repositories\Employee\EmployeeRepository.cs" />
     <Compile Include="DataAccess\Repositories\Employee\IEmployeeRepository.cs" />
+    <Compile Include="DataAccess\Repositories\Order\IOrderRepository.cs" />
+    <Compile Include="DataAccess\Repositories\Order\OrderRepository.cs" />
     <Compile Include="DataAccess\Repositories\Product\IProductRepository.cs" />
     <Compile Include="DataAccess\Repositories\Customer\CustomerRepository.cs" />
     <Compile Include="DataAccess\Repositories\Product\ProductRepository.cs" />
@@ -247,6 +249,8 @@
     <Compile Include="Services\Identity\ApplicationUserManager.cs" />
     <Compile Include="Services\Identity\ApplicationUserStore.cs" />
     <Compile Include="Services\Identity\CustomPasswordHasher.cs" />
+    <Compile Include="Services\Order\IOrderService.cs" />
+    <Compile Include="Services\Order\OrderService.cs" />
     <Compile Include="Services\Product\IProductService.cs" />
     <Compile Include="Services\Product\ProductService.cs" />
     <Compile Include="Services\Size\ISizeService.cs" />
@@ -254,6 +258,7 @@
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CartVM.cs" />
     <Compile Include="ViewModels\LoginVM.cs" />
+    <Compile Include="ViewModels\OrderVM.cs" />
     <Compile Include="ViewModels\RegisterVM.cs" />
     <Compile Include="ViewModels\UserAccountVM.cs" />
     <Compile Include="ViewModels\UserInformationVM.cs" />

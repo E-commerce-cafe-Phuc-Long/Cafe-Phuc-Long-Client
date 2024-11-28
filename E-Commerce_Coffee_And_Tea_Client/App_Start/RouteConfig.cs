@@ -98,6 +98,11 @@ namespace E_Commerce_Coffee_And_Tea_Client
                 url: "order",
                 defaults: new { controller = "Order", action = "Order" }
             );
+            routes.MapRoute(
+                name: "CreateOrder",
+                url: "order/create-order",
+                defaults: new { controller = "Order", action = "CreateOrder" }
+            );
 
             #endregion
         }

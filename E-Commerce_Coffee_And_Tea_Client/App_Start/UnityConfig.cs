@@ -17,6 +17,8 @@ using E_Commerce_Coffee_And_Tea_Client.Services.Category;
 using E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories.Cart;
 using E_Commerce_Coffee_And_Tea_Client.Services.Cart;
 using System.Web.Http;
+using E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories.Order;
+using E_Commerce_Coffee_And_Tea_Client.Services.Order;
 
 namespace E_Commerce_Coffee_And_Tea_Client
 {
@@ -73,6 +75,10 @@ namespace E_Commerce_Coffee_And_Tea_Client
             //Cart
             container.RegisterType<ICartRepository, CartRepository>();
             container.RegisterType<ICartService, CartService>();
+
+            //Cart
+            container.RegisterType<IOrderRepository, OrderRepository>();
+            container.RegisterType<IOrderService, OrderService>();
 
             #endregion
 

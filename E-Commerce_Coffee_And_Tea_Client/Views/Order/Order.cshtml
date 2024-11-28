@@ -1,11 +1,9 @@
-﻿@model List<E_Commerce_Coffee_And_Tea_Client.DataAccess.GioHang>
+﻿@model E_Commerce_Coffee_And_Tea_Client.ViewModels.OrderVM
 @{
     ViewBag.Title = "Thanh toán đơn hàng";
     Layout = "~/Views/Shared/_LayoutPage_Main.cshtml";
 
-    E_Commerce_Coffee_And_Tea_Client.DataAccess.KhachHang customer = ViewBag.customer;
     List<string> categoriesHasTeaDosage = ViewBag.categoriesHasTeaDosage;
-    decimal totalAmount = ViewBag.totalAmount;
 }
 
 <div class="w-[1280px] m-auto">
@@ -17,7 +15,7 @@
 </div>
 <div class="w-[1280px] m-auto">
     <div class="my-5">
-        <form action="">
+        <form action="@Url.RouteUrl("CreateOrder")" method="post">
             <div class="flex">
                 <div class=" border rounded-xl mx-3 flex-1">
                     <div class="flex justify-center items-center">
@@ -27,12 +25,14 @@
                     <div class="w-full">
                         <div class="p-3">
                             <div class="mb-3">
+                                <input type="text" name="maKH" value="@(Model.MaKH)" hidden />
+                                <input type="text" name="tenKH" value="@(Model.TenKH)" hidden />
                                 <span class="text-green-700 font-medium"><i class='me-2 bx bxs-location-plus'></i>Địa chỉ</span>
-                                <p class="font-light">@(customer.diaChi)</p>
+                                <p class="font-light">@(Model.DiaChi)</p>
                             </div>
                             <div class="mb-3">
                                 <span class="text-green-700 font-medium"><i class='me-2 bx bx-phone'></i>Số điện thoại</span>
-                                <p class="font-light">@(customer.soDT)</p>
+                                <p class="font-light">@(Model.SoDT)</p>
                             </div>
                             <div class="mb-3">
                                 <span class="text-green-700 font-medium"><i class='me-2 bx bx-timer'></i>Thời gian nhận hàng</span>
@@ -54,11 +54,11 @@
                         <div class="p-3">
                             <div class="mb-3">
                                 <span class="text-green-700 font-medium"><i class='me-2 bx bxs-location-plus'></i>Địa chỉ</span>
-                                <p class="font-light">@(customer.diaChi)</p>
+                                <p class="font-light">@(Model.DiaChi)</p>
                             </div>
                             <div class="mb-3">
                                 <span class="text-green-700 font-medium"><i class='me-2 bx bx-phone'></i>Số điện thoại</span>
-                                <p class="font-light">@(customer.soDT)</p>
+                                <p class="font-light">@(Model.SoDT)</p>
                             </div>
                             <div class="mb-3">
                                 <span class="text-green-700 font-medium"><i class='me-2 bx bx-timer'></i>Thời gian nhận hàng</span>
@@ -80,7 +80,7 @@
                 <div class="flex-1">
                     <h2 class="text font-semibold my-3 text-green-700"><i class='bx bxs-shopping-bag'></i>Giỏ hàng của bạn</h2>
                     <div class="mb-3 h-[352px] overflow-auto">
-                        @foreach (var item in Model)
+                        @foreach (var item in Model.CartItems)
                         {
                             <div class="flex items-center border-b mb-3">
                                 <div class="w-[75px] h-[75px] bg-gray-100 rounded-lg mx-3">
@@ -108,7 +108,7 @@
                                 </div>
                                 <div class="text-center">
                                     <a href="#" class="text-blue-700 text-xl"><i class='bx bx-pencil'></i></a>
-                                    <a href="#" class="text-red-700 text-xl"><i class='bx bx-trash'></i></a>
+                                    <a href="/cart/delete-cart-item?maCTSP=@(item.maCTSP)" class="text-red-700 text-xl"><i class='bx bx-trash'></i></a>
                                 </div>
                             </div>
                         }
@@ -117,11 +117,11 @@
                         <h2 class="text-green-700 font-semibold">Thông tin thanh toán</h2>
                         <div class="flex justify-between mx-3">
                             <p>Tổng tiền tạm tính: </p>
-                            <p>@string.Format("{0:N0} ₫", totalAmount)</p>
+                            <p>@string.Format("{0:N0} ₫", Model.TotalAmount)</p>
                         </div>
                         <div class="flex justify-between mx-3">
                             <p>Phí vận chuyển: </p>
-                            <p>12.000 ₫</p>
+                            <p>@string.Format("{0:N0} ₫", Model.ShippingFee)</p>
                         </div>
                         <div class="flex justify-between mx-3">
                             <p>Mã giảm giá: </p>
@@ -129,11 +129,12 @@
                         </div>
                         <div class="flex justify-between mx-3">
                             <p>Tổng tiền (Đã có VAT): </p>
-                            <p class="font-semibold text-green-600">@string.Format("{0:N0} ₫", totalAmount + 12000)</p>
+                            <p class="font-semibold text-green-600">@string.Format("{0:N0} ₫", Model.TotalWithVAT)</p>
                         </div>
                     </div>
                     <div>
                         <h2 class="text-green-700 font-semibold">Phương thức thanh toán</h2>
+                        <input type="text" name="maTrangThai" value="" hidden/>
                         <div class="flex mx-3">
                             <input type="radio" name="paymentMethod" id="" checked>
                             <label for="" class="mx-3">Tiền mặt</label>

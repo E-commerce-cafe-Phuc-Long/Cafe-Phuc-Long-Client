@@ -14,9 +14,9 @@ namespace E_Commerce_Coffee_And_Tea_Client.Services.Cart
         {
             _cartRepository = cartRepository;
         }
-        public List<GioHang> ShowCartItems()
+        public List<GioHang> ShowCartItemsByCustomerId(string customerId)
         {
-            return _cartRepository.ShowCartItems();
+            return _cartRepository.ShowCartItemsByCustomerId(customerId);
         }
         public void AddToCart(GioHang cart)
         {
@@ -25,6 +25,10 @@ namespace E_Commerce_Coffee_And_Tea_Client.Services.Cart
         public void DeleteItemInCart(GioHang cart)
         {
             _cartRepository.DeleteItemInCart(cart);
+        }
+        public void DeleteCart()
+        {
+            _cartRepository.DeleteCart();
         }
         //public string GenerateCartCode()
         //{
