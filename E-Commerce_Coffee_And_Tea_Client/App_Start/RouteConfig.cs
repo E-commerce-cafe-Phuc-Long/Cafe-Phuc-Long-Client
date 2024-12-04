@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Web.Services.Description;
 
 namespace E_Commerce_Coffee_And_Tea_Client
 {
@@ -99,11 +100,30 @@ namespace E_Commerce_Coffee_And_Tea_Client
                 defaults: new { controller = "Order", action = "Order" }
             );
             routes.MapRoute(
-                name: "CreateOrder",
+                name: "Create Order",
                 url: "order/create-order",
                 defaults: new { controller = "Order", action = "CreateOrder" }
             );
-
+            routes.MapRoute(
+                name: "Pending Orders",
+                url: "order/pending",
+                defaults: new { controller = "Order", action = "PendingOrders" }
+            );
+            routes.MapRoute(
+                name: "Preparing Orders",
+                url: "order/preparing",
+                defaults: new { controller = "Order", action = "PreparingOrders" }
+            );
+            routes.MapRoute(
+                name: "Completed Orders",
+                url: "order/completed",
+                defaults: new { controller = "Order", action = "CompletedOrders" }
+            );
+            routes.MapRoute(
+                name: "Canceled Orders",
+                url: "order/canceled",
+                defaults: new { controller = "Order", action = "CanceledOrders" }
+            );
             #endregion
         }
     }

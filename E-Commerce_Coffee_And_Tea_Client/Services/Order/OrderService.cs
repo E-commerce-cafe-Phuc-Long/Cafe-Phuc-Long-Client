@@ -103,5 +103,29 @@ namespace E_Commerce_Coffee_And_Tea_Client.Services.Order
         {
             return _orderRepository.GetPaymentMethods();
         }
+        public List<ChiTietDonHang> GetOrderDetails(string orderId)
+        {
+            return _orderRepository.GetOrderDetails(orderId);
+        }
+        public List<DonHang> GetOrders(string customerId)
+        {
+            return _orderRepository.GetOrders(customerId);
+        }
+        public List<DonHang> GetPendingOrders(string customerId)
+        {
+            return _orderRepository.GetPendingOrders(customerId);
+        }
+        public List<DonHang> GetPreparingOrders(string customerId)
+        {
+            return _orderRepository.GetPreparingOrders(customerId);
+        }
+        public List<DonHang> GetCompletedOrders(string customerId)
+        {
+            return _orderRepository.GetCompletedOrders(customerId);
+        }
+        public List<DonHang> GetCanceledOrders(string customerId)
+        {
+            return _orderRepository.GetCanceledOrders(customerId);
+        }
     }
 }

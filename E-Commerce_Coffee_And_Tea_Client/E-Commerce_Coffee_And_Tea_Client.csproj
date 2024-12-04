@@ -287,6 +287,10 @@
     <Content Include="Views\Shared\_PartialPage_LeftSideBar.cshtml" />
     <Content Include="Views\Product\SearchProduct.cshtml" />
     <Content Include="Views\Customer\Profile.cshtml" />
+    <Content Include="Views\Order\PendingOrders.cshtml" />
+    <Content Include="Views\Order\PreparingOrders.cshtml" />
+    <Content Include="Views\Order\CompletedOrders.cshtml" />
+    <Content Include="Views\Order\CanceledOrders.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

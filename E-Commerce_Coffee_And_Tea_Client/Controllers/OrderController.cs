@@ -43,7 +43,7 @@ namespace E_Commerce_Coffee_And_Tea_Client.Controllers
             decimal shippingFee = 12000;
             var orderVM = new OrderVM
             {
-                MaTrangThai = "TTDH001",
+                MaTrangThai = "TTDH004",
                 MaKH = customer.maKH,
                 TenKH = customer.tenKH,
                 DiaChi = customer.diaChi,
@@ -64,6 +64,42 @@ namespace E_Commerce_Coffee_And_Tea_Client.Controllers
             _orderService.GenerateOrder(orderVM);
             _cartService.DeleteCart();
             return RedirectToRoute("Home");
+        }
+        [Route("pending")]
+        public ActionResult PendingOrders()
+        {
+            string username = User.Identity.Name;
+            KhachHang customer = _customerService.GetCustomerByUsername(username);
+
+            List<DonHang> pendingOrders = _orderService.GetPendingOrders(customer.maKH);
+            return View(pendingOrders);
+        }
+        [Route("preparing")]
+        public ActionResult PreparingOrders()
+        {
+            string username = User.Identity.Name;
+            KhachHang customer = _customerService.GetCustomerByUsername(username);
+
+            List<DonHang> preparingOrders = _orderService.GetPreparingOrders(customer.maKH);
+            return View(preparingOrders);
+        }
+        [Route("completed")]
+        public ActionResult CompletedOrders()
+        {
+            string username = User.Identity.Name;
+            KhachHang customer = _customerService.GetCustomerByUsername(username);
+
+            List<DonHang> completedOrders = _orderService.GetCompletedOrders(customer.maKH);
+            return View(completedOrders);
+        }
+        [Route("canceled")]
+        public ActionResult CanceledOrders()
+        {
+            string username = User.Identity.Name;
+            KhachHang customer = _customerService.GetCustomerByUsername(username);
+
+            List<DonHang> canceledOrders = _orderService.GetCanceledOrders(customer.maKH);
+            return View(canceledOrders);
         }
     }
 }

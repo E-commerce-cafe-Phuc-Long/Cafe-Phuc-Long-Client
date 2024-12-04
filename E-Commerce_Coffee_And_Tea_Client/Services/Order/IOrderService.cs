@@ -17,5 +17,11 @@ namespace E_Commerce_Coffee_And_Tea_Client.Services.Order
 
         //Payment Method
         List<PhuongThucThanhToan> GetPaymentMethods();
+        List<ChiTietDonHang> GetOrderDetails(string orderId);
+        List<DonHang> GetOrders(string customerId);
+        List<DonHang> GetPendingOrders(string customerId);
+        List<DonHang> GetPreparingOrders(string customerId);
+        List<DonHang> GetCompletedOrders(string customerId);
+        List<DonHang> GetCanceledOrders(string customerId);
     }
 }

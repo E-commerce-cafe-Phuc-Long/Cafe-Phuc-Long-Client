@@ -1,0 +1,64 @@
+﻿@model List<E_Commerce_Coffee_And_Tea_Client.DataAccess.DonHang>
+@{
+    ViewBag.Title = "Hoạt động đơn hàng";
+    Layout = "~/Views/Shared/_LayoutPage_Main.cshtml";
+}
+
+<div class="w-[1280px] m-auto">
+    <ul class="flex py-2">
+        <li><a href="@Url.RouteUrl("Home")" class="block mx-2 hover:text-green-800">Trang chủ</a></li>
+        <li>/</li>
+        <li><a href="#" class="block mx-2 hover:text-green-800">Đơn hàng của bạn</a></li>
+    </ul>
+</div>
+
+<div class="w-[1280px] m-auto my-3">
+    <div class="flex gap-2">
+        <div class="w-1/5">
+            <div class="border w-[80%] m-auto p-3 rounded-2xl">
+                <h2 class="font-semibold text-green-800 text-lg underline my-2">Hồ sơ người dùng</h2>
+                <ul class="">
+                    <li><a href="@Url.RouteUrl("Profile")" class="block px-2 py-1">Tài khoản</a></li>
+                    <li><a href="@Url.RouteUrl("Pending Orders")" class="block px-2 py-1">Đơn mua</a></li>
+                    <li><a href="#" class="block px-2 py-1">Sản phẩm yêu thích</a></li>
+                </ul>
+            </div>
+            <div class="flex my-5 justify-center">
+                <a href="@Url.RouteUrl("Logout")" class="bg-green-700 text-white rounded-xl px-4 py-2">Logout</a>
+            </div>
+        </div>
+        <div class="w-4/5">
+            <div class="flex">
+                <a href="@Url.RouteUrl("Pending Orders")" class="w-full cursor-pointer hover:bg-gray-200 bg-gray-100 text-green-800 rounded-t-xl font-semibold text-center mb-3 py-2">Chờ xác nhận</a>
+                <a href="@Url.RouteUrl("Preparing Orders")" class="w-full cursor-pointer hover:bg-gray-200 bg-gray-100 text-green-800 rounded-t-xl font-semibold text-center mb-3 py-2">Đang xử lý</a>
+                <a href="@Url.RouteUrl("Completed Orders")" class="w-full cursor-pointer option-tab-active rounded-t-xl font-semibold text-center mb-3 py-2">Thành công</a>
+                <a href="@Url.RouteUrl("Canceled Orders")" class="w-full cursor-pointer hover:bg-gray-200 bg-gray-100 text-green-800 rounded-t-xl font-semibold text-center mb-3 py-2">Đã hủy</a>
+            </div>
+            <div>
+                <div class="order-history">
+                    @if (Model.Count > 0)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <div class="order-item border-b py-3 flex justify-between items-center">
+                                <div class="">
+                                    <p class="font-semibold">Mã đơn hàng: @(item.maDH)</p>
+                                    <p class="text-gray-600">Ngày: @(item.ngayLapDH)</p>
+                                </div>
+                                <div class="">
+                                    <p class="text-green-600 font-semibold text-end">@(item.TrangThai_DH.tenTT)</p>
+                                    <p class="text-gray-600 text-end">Tổng: @string.Format("{0:N0} ₫", item.tongTien)</p>
+                                    <a href="order-details.html?order_id=@(item.maDH)" class="block my-1 btn-view-details text-white bg-green-800 py-2 px-4 rounded-lg hover:bg-green-700">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <h2 class="font-semibold text-green-800 text-lg text-center my-10">Không có đơn hàng nào ở đây</h2>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
