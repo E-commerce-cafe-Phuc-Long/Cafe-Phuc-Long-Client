@@ -203,6 +203,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\ChatBotController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
@@ -291,6 +292,7 @@
     <Content Include="Views\Order\PreparingOrders.cshtml" />
     <Content Include="Views\Order\CompletedOrders.cshtml" />
     <Content Include="Views\Order\CanceledOrders.cshtml" />
+    <Content Include="Views\ChatBot\_PartialPage_ChatBot.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

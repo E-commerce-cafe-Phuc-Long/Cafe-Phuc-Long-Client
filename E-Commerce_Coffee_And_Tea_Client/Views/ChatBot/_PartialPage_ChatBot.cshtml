@@ -1,0 +1,119 @@
+﻿<div id="openChat" class="fixed bottom-28 right-5">
+    <a>
+        <i class='bx bx-conversation text-xl px-5 py-4 bg-gray-200 text-green-700 rounded-[50%] border-2 border-white cursor-pointer'></i>
+    </a>
+</div>
+
+<div id="chatbotModal" class="rounded-lg fixed bottom-28 right-24 bg-gray-800 bg-opacity-50 hidden justify-center items-center z-[20] border bg-gray-800">
+    <div class="bg-white rounded-lg w-80 h-96">
+        <div class="flex justify-between items-center p-4 bg-green-500 text-white rounded-t-lg">
+            <span class="font-semibold">ChatBot - Coffee & Tea</span>
+            <button id="closeChat" class="text-lg font-semibold">×</button>
+        </div>
+        <div id="chatbox" class="h-[calc(100%-80px)] overflow-y-auto p-4">
+            <div class="p-2 mb-2 bg-gray-100 rounded-lg">Tôi có thể giúp gì cho bạn?</div>
+        </div>
+        <div class="p-4 bg-gray-200 rounded-b-lg">
+            <input id="userMessage" type="text" class="w-full p-2 border rounded-lg" placeholder="Nhập câu hỏi..." />
+            <button id="sendMessage" class="mt-2 w-full p-2 bg-green-500 text-white rounded-lg">Gửi</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Send message to Rasa REST API
+    //const sendMessage = (message) => {
+    //    $.ajax({
+    //        url: "http://localhost:5005/webhooks/rest/webhook",
+    //        type: "POST",
+    //        contentType: "application/x-www-form-urlencoded",
+    //        dataType: "json",
+    //        data: JSON.stringify({
+    //            sender: "user",
+    //            message: message
+    //        }),
+    //        success: function (response) {
+    //            // Xử lý dữ liệu phản hồi
+    //            if (response && response.length > 0) {
+    //                return response;
+    //            } else {
+    //                console.log("No data received.");
+    //            }
+    //        },
+    //        error: function (xhr, status, error) {
+    //            console.error(`HTTP error! status: ${xhr.status}, error: ${error}`);
+    //        }
+    //    });
+    //};
+
+
+    // Handle sending message from input
+    const sendButton = document.getElementById("sendMessage");
+    const userMessageInput = document.getElementById("userMessage");
+    const chatbox = document.getElementById("chatbox");
+
+    sendButton.addEventListener("click", async () => {
+        const message = userMessageInput.value;
+        if (message.trim() === "") return;
+
+        // Display user's message
+        chatbox.innerHTML += `<div class="p-2 mb-2 bg-blue-100 rounded-lg text-right">${message}</div>`;
+        userMessageInput.value = "";  // Clear input field
+
+        // Send message to API and get bot's response
+        //const response = await sendMessage(message);
+        $.ajax({
+            url: "http://localhost:5005/webhooks/rest/webhook",
+            type: "POST",
+            contentType: "application/x-www-form-urlencoded",
+            dataType: "json",
+            data: JSON.stringify({
+                sender: "user",
+                message: message
+            }),
+            success: function (response) {
+                if (response && response.length > 0) {
+
+                    console.log(response);
+
+                    if (response && response.length > 0) {
+                        // Display bot's response
+                        response.forEach((res) => {
+                            chatbox.innerHTML += `<div class="p-2 mb-2 bg-gray-100 rounded-lg">${res.text}</div>`;
+                        });
+                        //chatbox.innerHTML += `<div class="p-2 mb-2 bg-gray-100 rounded-lg">${response[0].text}</div>`;
+                        chatbox.scrollTop = chatbox.scrollHeight;  // Scroll to the bottom
+                    }
+                } else {
+                    console.log("No data received.");
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error(`HTTP error! status: ${xhr.status}, error: ${error}`);
+            }
+        });
+        
+    });
+
+    // Handle Enter key press
+    userMessageInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+            sendButton.click();
+        }
+    });
+
+    // Open the chatbot
+    const openButton = document.getElementById("openChat");
+    const chatbotModal = document.getElementById("chatbotModal");
+
+    openButton.addEventListener("click", () => {
+        chatbotModal.classList.remove("hidden");
+    });
+
+    // Close the chatbot
+    const closeButton = document.getElementById("closeChat");
+    closeButton.addEventListener("click", () => {
+        chatbotModal.classList.add("hidden");
+        chatbox.innerHTML = "<div class='p-2 mb-2 bg-gray-100 rounded-lg'>Tôi có thể giúp gì cho bạn?</div>";
+    });
+</script>

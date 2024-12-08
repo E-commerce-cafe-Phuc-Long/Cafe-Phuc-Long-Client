@@ -20,7 +20,7 @@ namespace E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories
         public List<ChiTietSanPham> GetProductByName(string productName)
         {
             return _context.ChiTietSanPhams
-                .Where(prod => prod.SanPham.tenSP.ToLower().Contains(productName.ToLower()))
+                .Where(prod => prod.SanPham.tenSP.ToLower().Contains(productName.ToLower()) && prod.SanPham.maTT == "TT001")
                 .GroupBy(ctsp => ctsp.maSP)
                 //.Select(group => group.OrderByDescending(ctsp => ctsp.maCTSP).FirstOrDefault())
                 .Select(group => group.OrderBy(ctsp => ctsp.maCTSP).FirstOrDefault())
@@ -28,7 +28,9 @@ namespace E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories
         }
         public List<SanPham> GetProductList()
         {
-            return _context.SanPhams.ToList();
+            return _context.SanPhams
+                .Where(prod => prod.maTT == "TT001")
+                .ToList();
         }
         public List<ChiTietSanPham> GetLastProductDetailByIds(List<string> productIds)
         {
@@ -47,7 +49,7 @@ namespace E_Commerce_Coffee_And_Tea_Client.DataAccess.Repositories
         public List<SanPham> GetProductByCategoryId(string categoryId)
         {
             return _context.SanPhams
-                .Where(prod => prod.maDM == categoryId)
+                .Where(prod => prod.maDM == categoryId && prod.maTT == "TT001")
                 .ToList();
         }
     }

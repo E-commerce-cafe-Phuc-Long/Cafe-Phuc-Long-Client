@@ -29,10 +29,8 @@
                         </div>
                         <div class="px-5 py-3">
                             <h3>
-                                <a 
-                                   href="@Url.RouteUrl("ProductDetail", new { productId = prod.SanPham.maSP, sizeId = prod.Size.maSize })"
-                                   title="@prod.SanPham.tenSP (@prod.Size.tenSize)"
-                                   >
+                                <a href="@Url.RouteUrl("ProductDetail", new { productId = prod.SanPham.maSP, sizeId = prod.Size.maSize })"
+                                   title="@prod.SanPham.tenSP (@prod.Size.tenSize)">
                                     @if (prod.SanPham.tenSP.Length <= 16)
                                     {
                                         @prod.SanPham.tenSP @(" (") @(prod.Size.tenSize) @(")");
@@ -71,4 +69,5 @@
         </div>
     </div>
 </div>
+@Html.Action("_PartialPage_ChatBot", "ChatBot")
 @Html.Action("_PartialPage_Cart", "Cart")

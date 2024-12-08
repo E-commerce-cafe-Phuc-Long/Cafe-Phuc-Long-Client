@@ -34,7 +34,7 @@ namespace E_Commerce_Coffee_And_Tea_Client.Services.Order
                 maKH = orderVM.MaKH,
                 maNV = null,
                 //maTT = orderVM.MaTrangThai,
-                maTT = "TTDH001"
+                maTT = "TTDH004"
             };
             _orderRepository.GenerateOrder(order);
             //DonHang donHang = new DonHang();
